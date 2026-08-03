@@ -1,93 +1,94 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Family App Library</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f8efd9;
-      color: #2f2418;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="A friendly home for Jellykid family apps, stories, and learning adventures."
+    />
+    <meta name="theme-color" content="#f7efe3" />
+    <title>Jellykid Family Apps</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="brand" href="#main-content" aria-label="Jellykid Family home">
+          <span class="brand-mark" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </span>
+          <span>Jellykid Family</span>
+        </a>
+        <span class="header-note">Made for curious kids</span>
+      </header>
 
-    header {
-      padding: 40px 20px;
-      text-align: center;
-      background: #23415a;
-      color: white;
-    }
+      <main id="main-content">
+        <section class="hero" aria-labelledby="page-title">
+          <p class="eyebrow">Our family app shelf</p>
+          <h1 id="page-title">Pick an adventure<br /><em>and jump right in.</em></h1>
+          <p class="hero-copy">
+            Stories to explore and money skills to practice&mdash;all in one friendly place.
+          </p>
+        </section>
 
-    header h1 {
-      margin: 0 0 10px;
-      font-size: 2.2rem;
-    }
+        <section class="apps" aria-labelledby="apps-heading">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Ready when you are</p>
+              <h2 id="apps-heading">Choose an app</h2>
+            </div>
+            <p>More family favorites are on the way.</p>
+          </div>
 
-    header p {
-      margin: 0;
-      font-size: 1.1rem;
-    }
+          <div class="app-grid">
+            <article class="app-card book-card">
+              <div class="card-top">
+                <div class="card-icon book-icon" aria-hidden="true">
+                  <span class="book-page left"></span>
+                  <span class="book-page right"></span>
+                  <span class="book-star">&#9733;</span>
+                </div>
+                <span class="card-number" aria-hidden="true">01</span>
+              </div>
+              <div class="card-copy">
+                <p class="card-label">Stories &amp; reading</p>
+                <h3>Picture Book Library</h3>
+                <p>Read interactive picture books and story adventures.</p>
+              </div>
+              <a class="app-button" href="PICTURE_BOOK_LINK_HERE">
+                <span>Open the library</span>
+                <span aria-hidden="true">&rarr;</span>
+              </a>
+            </article>
 
-    main {
-      max-width: 900px;
-      margin: 30px auto;
-      padding: 0 20px;
-      display: grid;
-      gap: 20px;
-    }
+            <article class="app-card banking-card">
+              <div class="card-top">
+                <div class="card-icon coin-icon" aria-hidden="true">
+                  <span class="coin coin-one">&cent;</span>
+                  <span class="coin coin-two">$</span>
+                  <span class="coin coin-three">&cent;</span>
+                </div>
+                <span class="card-number" aria-hidden="true">02</span>
+              </div>
+              <div class="card-copy">
+                <p class="card-label">Money practice</p>
+                <h3>Kids Banking App</h3>
+                <p>Practice saving, spending, counting, and money choices.</p>
+              </div>
+              <a class="app-button" href="BANKING_APP_LINK_HERE">
+                <span>Start practicing</span>
+                <span aria-hidden="true">&rarr;</span>
+              </a>
+            </article>
+          </div>
+        </section>
+      </main>
 
-    .app-card {
-      background: white;
-      border-radius: 18px;
-      padding: 24px;
-      box-shadow: 0 8px 24px rgba(0,0,0,0.12);
-      border: 2px solid #e3d1aa;
-    }
-
-    .app-card h2 {
-      margin-top: 0;
-      color: #23415a;
-    }
-
-    .app-card p {
-      line-height: 1.5;
-    }
-
-    .button {
-      display: inline-block;
-      margin-top: 10px;
-      padding: 12px 18px;
-      border-radius: 999px;
-      background: #d7973d;
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .button:hover {
-      background: #b97828;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>Family App Library</h1>
-    <p>A small collection of apps, games, and stories.</p>
-  </header>
-
-  <main>
-    <section class="app-card">
-      <h2>Picture Book Library</h2>
-      <p>Read interactive picture books and story adventures.</p>
-      <a class="button" href="PICTURE_BOOK_LINK_HERE">Open Picture Book Library</a>
-    </section>
-
-    <section class="app-card">
-      <h2>Banking App</h2>
-      <p>Practice saving, spending, counting, and money choices.</p>
-      <a class="button" href="BANKING_APP_LINK_HERE">Open Banking App</a>
-    </section>
-  </main>
-</body>
+      <footer>
+        <p>Made with care for growing minds.</p>
+        <span aria-hidden="true">&#10022;</span>
+      </footer>
+    </div>
+  </body>
 </html>
