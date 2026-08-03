@@ -1,0 +1,538 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#1fa6a0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Sprout Bank" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <title>Sprout Bank</title>
+    <link rel="manifest" href="./manifest.json" />
+    <link rel="apple-touch-icon" href="./assets/mascot.png" />
+    <link rel="stylesheet" href="./src/styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="rail" aria-label="Main navigation">
+        <div class="brand">
+          <img src="./assets/mascot.png" alt="Sprout Bank mascot" />
+          <div>
+            <strong>Sprout Bank</strong>
+            <span>Chores & rewards</span>
+          </div>
+        </div>
+
+        <nav class="tabs" aria-label="Sections">
+          <button class="tab active" type="button" data-view="today" aria-label="Home">
+            <span class="nav-art nav-home" aria-hidden="true"><i></i></span>
+            <b>Home</b>
+          </button>
+          <button class="tab" type="button" data-view="parent" aria-label="Parent tools">
+            <span class="nav-art nav-approvals" aria-hidden="true"><i></i></span>
+            <b>Parent</b>
+            <em class="nav-badge hidden" id="approvalBadge">0</em>
+          </button>
+          <button class="tab" type="button" data-view="bank" aria-label="Bank">
+            <span class="nav-art nav-bank" aria-hidden="true"><i></i></span>
+            <b>Bank</b>
+          </button>
+          <button class="tab" type="button" data-view="learn" aria-label="Learning">
+            <span class="nav-art nav-learn" aria-hidden="true"><i></i></span>
+            <b>Learn</b>
+          </button>
+          <button class="tab" type="button" data-view="spend" aria-label="Purchases">
+            <span class="nav-art nav-purchases" aria-hidden="true"><i></i></span>
+            <b>Purchases</b>
+          </button>
+        </nav>
+
+        <section class="kid-switch" aria-labelledby="kid-switch-title">
+          <h2 id="kid-switch-title">Profile</h2>
+          <label>
+            <span>Child name</span>
+            <input id="childName" type="text" autocomplete="off" />
+          </label>
+          <button class="settings-toggle" type="button" data-toggle-settings aria-expanded="false" aria-controls="settingsPanel">Settings</button>
+          <div class="settings-panel hidden" id="settingsPanel">
+            <label class="toggle">
+              <input id="adultMode" type="checkbox" />
+              <span>Adult mode</span>
+            </label>
+            <label class="toggle">
+              <input id="soundEffects" type="checkbox" />
+              <span>Sound effects</span>
+            </label>
+            <label class="toggle">
+              <input id="tokenCurrency" type="checkbox" />
+              <span>Use token currency</span>
+            </label>
+            <small class="settings-note">Adult mode is required to change currency.</small>
+            <button class="settings-action" type="button" id="undoLastAction" disabled>Undo last action</button>
+          </div>
+        </section>
+      </aside>
+
+      <main>
+        <header class="hero">
+          <div class="hero-copy">
+            <p id="todayDate"></p>
+            <h1 id="greeting">Ready for today's wins?</h1>
+            <div class="quick-stats" aria-label="Account snapshot">
+              <div>
+                <span>Balance</span>
+                <strong id="balance">$0.00</strong>
+              </div>
+              <div>
+                <span>Waiting</span>
+                <strong id="pendingTotal">$0.00</strong>
+              </div>
+              <div>
+                <span>Streak</span>
+                <strong id="streakCount">0 days</strong>
+              </div>
+              <div>
+                <span>Closet tokens</span>
+                <strong id="tokenCount">0</strong>
+              </div>
+            </div>
+          </div>
+          <div class="mascot-stage">
+            <img class="mascot-friend mascot-friend-yellow" src="./assets/mascot-friend-yellow.png" alt="Sunny, Sprout's yellow friend" />
+            <img id="heroMascot" src="./assets/mascot.png" alt="Sprout mascot" role="button" tabindex="0" title="Tap for a laugh" />
+            <img class="mascot-friend mascot-friend-red" src="./assets/mascot-friend-red.png" alt="Berry, Sprout's red friend" />
+            <span class="spark spark-one"></span>
+            <span class="spark spark-two"></span>
+            <span class="spark spark-three"></span>
+          </div>
+        </header>
+
+        <section class="view active" id="todayView" data-view-panel="today">
+          <div class="section-heading">
+            <div>
+              <p>Kid board</p>
+              <h2>Pick a mission, earn a boost</h2>
+            </div>
+            <button class="icon-button" type="button" id="resetDemo" title="Reset board" aria-label="Reset board">R</button>
+          </div>
+          <div id="approvalShortcut" class="approval-shortcut hidden" aria-live="polite">
+            <div>
+              <strong>Adult approval waiting</strong>
+              <span id="approvalShortcutText">0 missions need review</span>
+            </div>
+            <button class="small-action" type="button" data-view="parent" data-parent-mode="approvals">Review now</button>
+          </div>
+          <div id="choreList" class="chore-grid"></div>
+          <div class="home-rewards">
+            <section class="panel milestone-panel collapsed" id="trailPanel" aria-labelledby="milestone-title">
+              <button class="reward-toggle" type="button" data-toggle-trail aria-expanded="false" aria-controls="trailBody">
+                <span>
+                  <small>Treasure trail</small>
+                  <strong id="milestone-title">Savings milestones</strong>
+                </span>
+              </button>
+              <div id="trailBody" class="trail-body hidden">
+                <div id="milestoneTrail" class="milestone-trail"></div>
+              </div>
+            </section>
+            <section class="panel shop-panel collapsed" id="shopPanel" aria-labelledby="shop-title">
+              <button class="shop-toggle" type="button" data-toggle-shop aria-expanded="false" aria-controls="shopBody">
+                <span>
+                  <small>Token shop</small>
+                  <strong id="shop-title">Mascot closet</strong>
+                </span>
+                <span class="token-wallet"><span id="shopTokenCount">0</span> closet tokens</span>
+              </button>
+              <div id="shopBody" class="shop-body hidden">
+                <div id="outfitShop" class="outfit-shop"></div>
+              </div>
+            </section>
+          </div>
+        </section>
+
+        <section class="view" id="learnView" data-view-panel="learn">
+          <div class="section-heading">
+            <div>
+              <p>Learning garden</p>
+              <h2>Pick a practice path</h2>
+            </div>
+            <span class="learning-reward-pill" id="learningRewardLabel">Rewards wait for adult approval</span>
+          </div>
+
+          <section class="learning-coach panel" aria-live="polite">
+            <img id="learningCoachImage" src="./assets/mascot.png" alt="Sprout coach" />
+            <div class="learning-coach-copy">
+              <p>Sprout says</p>
+              <h3 id="learningCoachMessage">Complete 10 practice wins to send a reward for approval.</h3>
+              <div class="learning-progress-row">
+                <span id="learningProgressText">0/10 correct</span>
+                <div class="learning-progress" aria-hidden="true"><i id="learningProgressFill"></i></div>
+              </div>
+            </div>
+          </section>
+
+          <div class="learning-screen active" data-learn-panel="home">
+            <div class="learning-choice-grid">
+              <button class="learning-choice-card math-choice" type="button" data-learn-screen="math-menu">
+                <span class="choice-art" aria-hidden="true">123</span>
+                <strong>Math & Numbers</strong>
+                <small>Add, subtract, and count with Sprout.</small>
+              </button>
+              <button class="learning-choice-card letter-choice" type="button" data-learn-screen="letters-menu">
+                <span class="choice-art" aria-hidden="true">ABC</span>
+                <strong>Letters & Writing</strong>
+                <small>Hear letters, build words, and write.</small>
+              </button>
+            </div>
+          </div>
+
+          <div class="learning-screen" data-learn-panel="math-menu">
+            <div class="learning-back-row">
+              <button class="small-action light" type="button" data-learn-screen="home">Back</button>
+            </div>
+            <div class="learning-choice-grid three">
+              <button class="learning-choice-card math-choice" type="button" data-learn-screen="addition">
+                <span class="choice-art" aria-hidden="true">+</span>
+                <strong>Addition</strong>
+                <small>Put Sprout groups together.</small>
+              </button>
+              <button class="learning-choice-card math-choice" type="button" data-learn-screen="subtraction">
+                <span class="choice-art" aria-hidden="true">-</span>
+                <strong>Subtraction</strong>
+                <small>Find what is left.</small>
+              </button>
+              <button class="learning-choice-card math-choice" type="button" data-learn-screen="counting">
+                <span class="choice-art" aria-hidden="true">...</span>
+                <strong>Counting</strong>
+                <small>Count every little sprout.</small>
+              </button>
+            </div>
+          </div>
+
+          <div class="learning-screen" data-learn-panel="letters-menu">
+            <div class="learning-back-row">
+              <button class="small-action light" type="button" data-learn-screen="home">Back</button>
+            </div>
+            <div class="learning-choice-grid">
+              <button class="learning-choice-card letter-choice" type="button" data-learn-screen="alphabet">
+                <span class="choice-art" aria-hidden="true">Aa</span>
+                <strong>Alphabet</strong>
+                <small>Say, hear, and write letters.</small>
+              </button>
+              <button class="learning-choice-card word-choice" type="button" data-learn-screen="words">
+                <span class="choice-art" aria-hidden="true">CAT</span>
+                <strong>Words</strong>
+                <small>Drag letters into the right spots.</small>
+              </button>
+            </div>
+          </div>
+
+          <div class="learning-screen" data-learn-panel="addition">
+            <div class="learning-back-row">
+              <button class="small-action light" type="button" data-learn-screen="math-menu">Back</button>
+            </div>
+            <section class="panel learning-card" aria-labelledby="addition-practice-title">
+              <div class="learning-card-head">
+                <span class="learning-badge">+</span>
+                <div>
+                  <p>Number quest</p>
+                  <h2 id="addition-practice-title">Addition</h2>
+                </div>
+              </div>
+              <div class="problem-display" id="additionProblem">1 + 1 = ?</div>
+              <div class="math-visuals" id="additionVisuals" aria-label="Sprout counting helpers"></div>
+              <div class="answer-grid" id="additionAnswers" aria-label="Addition answer choices"></div>
+            </section>
+          </div>
+
+          <div class="learning-screen" data-learn-panel="subtraction">
+            <div class="learning-back-row">
+              <button class="small-action light" type="button" data-learn-screen="math-menu">Back</button>
+            </div>
+            <section class="panel learning-card" aria-labelledby="subtraction-practice-title">
+              <div class="learning-card-head">
+                <span class="learning-badge">-</span>
+                <div>
+                  <p>Number quest</p>
+                  <h2 id="subtraction-practice-title">Subtraction</h2>
+                </div>
+              </div>
+              <div class="problem-display" id="subtractionProblem">5 - 2 = ?</div>
+              <div class="math-visuals" id="subtractionVisuals" aria-label="Sprout take-away helpers"></div>
+              <div class="answer-grid" id="subtractionAnswers" aria-label="Subtraction answer choices"></div>
+            </section>
+          </div>
+
+          <div class="learning-screen" data-learn-panel="counting">
+            <div class="learning-back-row">
+              <button class="small-action light" type="button" data-learn-screen="math-menu">Back</button>
+            </div>
+            <section class="panel learning-card" aria-labelledby="counting-practice-title">
+              <div class="learning-card-head">
+                <span class="learning-badge dots">...</span>
+                <div>
+                  <p>Counting meadow</p>
+                  <h2 id="counting-practice-title">Count the sprouts</h2>
+                </div>
+              </div>
+              <div class="counting-dots" id="countingDots" aria-label="Items to count"></div>
+              <div class="answer-grid" id="countingAnswers" aria-label="Counting answer choices"></div>
+
+              <div class="mixed-counting" aria-labelledby="mixedCountingQuestion">
+                <div class="mixed-counting-head">
+                  <h3 id="mixedCountingQuestion">How many Sprouts do we see?</h3>
+                  <button class="small-action light" type="button" data-new-count-mix>New mix</button>
+                </div>
+                <div class="mixed-counting-board" id="mixedCountingBoard" aria-label="Mixed Sprout counting game"></div>
+                <p id="mixedCountingProgress" class="mixed-counting-progress">Tap the matching friends to count them.</p>
+              </div>
+            </section>
+          </div>
+
+          <div class="learning-screen" data-learn-panel="alphabet">
+            <div class="learning-back-row">
+              <button class="small-action light" type="button" data-learn-screen="letters-menu">Back</button>
+            </div>
+            <div class="learning-grid letters-layout">
+              <section class="panel learning-card letter-card" aria-labelledby="letter-practice-title">
+                <div class="learning-card-head">
+                  <span class="learning-badge">ABC</span>
+                  <div>
+                    <p>Letter trail</p>
+                    <h2 id="letter-practice-title">Say it, trace it, write it</h2>
+                  </div>
+                </div>
+                <div class="letter-hero" id="letterDisplay">A a</div>
+                <div class="letter-sound-actions">
+                  <button class="small-action" type="button" data-say-letter>Say letter</button>
+                  <button class="small-action light" type="button" data-say-phonics>Phonic sound</button>
+                  <button class="small-action" type="button" data-new-letter>New letter</button>
+                </div>
+              </section>
+
+              <section class="panel learning-card writing-card" aria-labelledby="writing-practice-title">
+                <div class="learning-card-head">
+                  <span class="learning-badge pencil">Write</span>
+                  <div>
+                    <p>Writing pad</p>
+                    <h2 id="writing-practice-title">Practice writing</h2>
+                  </div>
+                </div>
+                <canvas id="writingPad" class="writing-pad" data-writing-pad="alphabet" width="680" height="360" aria-label="Practice writing pad"></canvas>
+                <div class="writing-actions">
+                  <button class="small-action light" type="button" id="clearWriting">Clear</button>
+                  <button class="primary-action" type="button" data-check-writing>Check writing</button>
+                </div>
+                <div class="writing-check hidden" id="writingCheck">
+                  <button class="small-action" type="button" data-writing-correct>Correct</button>
+                  <button class="small-action light" type="button" data-writing-incorrect>Try again</button>
+                </div>
+              </section>
+            </div>
+          </div>
+
+          <div class="learning-screen" data-learn-panel="words">
+            <div class="learning-back-row">
+              <button class="small-action light" type="button" data-learn-screen="letters-menu">Back</button>
+            </div>
+            <div class="learning-grid words-layout">
+              <section class="panel learning-card" aria-labelledby="word-practice-title">
+                <div class="learning-card-head">
+                  <span class="learning-badge">Word</span>
+                  <div>
+                    <p>Word builder</p>
+                    <h2 id="word-practice-title">Put the letters in order</h2>
+                  </div>
+                </div>
+                <div class="word-picture" id="wordPicture" aria-label="Word picture"></div>
+                <div class="word-slots" id="wordSlots" aria-label="Word slots"></div>
+                <div class="word-letter-bank" id="wordLetterBank" aria-label="Letters to place"></div>
+                <div class="writing-actions">
+                  <button class="small-action light" type="button" data-new-word>New word</button>
+                </div>
+              </section>
+
+              <section class="panel learning-card writing-card" aria-labelledby="word-writing-title">
+                <div class="learning-card-head">
+                  <span class="learning-badge pencil">Write</span>
+                  <div>
+                    <p>Word writing</p>
+                    <h2 id="word-writing-title">Practice the word</h2>
+                  </div>
+                </div>
+                <div class="word-writing-letter" id="wordWritingPrompt">CAT</div>
+                <canvas id="wordWritingPad" class="writing-pad" data-writing-pad="word" width="680" height="360" aria-label="Practice word writing pad"></canvas>
+                <div class="writing-actions">
+                  <button class="small-action light" type="button" id="clearWordWriting">Clear</button>
+                  <button class="primary-action" type="button" data-check-word-writing>Check writing</button>
+                </div>
+                <div class="writing-check hidden" id="wordWritingCheck">
+                  <button class="small-action" type="button" data-word-writing-correct>Correct</button>
+                  <button class="small-action light" type="button" data-word-writing-incorrect>Try again</button>
+                </div>
+              </section>
+            </div>
+          </div>
+        </section>
+        <section class="view" id="bankView" data-view-panel="bank">
+          <div class="section-heading">
+            <div>
+              <p>Proxy checking</p>
+              <h2>Account map</h2>
+            </div>
+          </div>
+          <div class="money-layout">
+            <section class="panel balance-panel" aria-labelledby="balance-title">
+              <h3 id="balance-title">Account balance</h3>
+              <div class="big-money" id="bankBalance">$0.00</div>
+              <div class="meter" aria-hidden="true">
+                <span id="goalMeter"></span>
+              </div>
+              <p id="goalText"></p>
+            </section>
+            <section class="panel chart-panel" aria-labelledby="chart-title">
+              <div class="chart-header">
+                <h3 id="chart-title">Earned vs. spent</h3>
+                <div class="chart-tabs" aria-label="Chart type">
+                  <button class="chart-tab active" type="button" data-chart="bar">Bars</button>
+                  <button class="chart-tab" type="button" data-chart="line">Line</button>
+                </div>
+              </div>
+              <div id="moneyChart" class="bar-chart" role="img" aria-label="Bar chart of account value earned and spent"></div>
+            </section>
+          </div>
+          <section class="panel history-panel" aria-labelledby="history-title">
+            <div class="section-heading compact">
+              <div>
+                <p>Ledger</p>
+                <h2 id="history-title">Transaction history</h2>
+              </div>
+            </div>
+            <div id="transactions" class="transactions"></div>
+          </section>
+        </section>
+
+        <section class="view" id="parentView" data-view-panel="parent">
+          <div class="section-heading">
+            <div>
+              <p>Parent tools</p>
+              <h2>Approvals and missions</h2>
+            </div>
+            <div class="parent-toggle" aria-label="Parent tool view">
+              <button class="parent-tab active" type="button" data-parent-mode="approvals">Approvals</button>
+              <button class="parent-tab" type="button" data-parent-mode="missions">Missions</button>
+            </div>
+          </div>
+
+          <div class="parent-pane active" data-parent-panel="approvals">
+            <section class="panel approvals-panel" aria-labelledby="approval-title">
+              <div class="section-heading compact">
+                <div>
+                  <p>Adult review</p>
+                  <h2 id="approval-title">Adult approvals</h2>
+                </div>
+              </div>
+              <div id="approvalList" class="approval-list"></div>
+            </section>
+          </div>
+
+          <div class="parent-pane" data-parent-panel="missions">
+            <div class="two-column">
+              <section class="panel" aria-labelledby="add-chore-title">
+                <h2 id="add-chore-title">Add a mission</h2>
+                <form id="choreForm" class="stacked-form">
+                  <input name="editId" type="hidden" />
+                  <label>
+                    <span>Mission name</span>
+                    <input name="title" type="text" placeholder="Feed the pet" required />
+                  </label>
+                  <label>
+                    <span>Reward value</span>
+                    <input name="amount" type="number" min="0.25" step="0.25" placeholder="2.00" required />
+                  </label>
+                  <label>
+                    <span>Category</span>
+                    <select name="category">
+                      <option>Kitchen</option>
+                      <option>Bedroom</option>
+                      <option>Bathroom</option>
+                      <option>Pets</option>
+                      <option>Outdoors</option>
+                      <option>Kindness</option>
+                      <option>Homework</option>
+                      <option>Learning</option>
+                    </select>
+                  </label>
+                  <label>
+                    <span>Repeat</span>
+                    <select name="recurrence">
+                      <option value="multi">Multi-complete</option>
+                      <option value="daily">Daily</option>
+                      <option value="weekly">Weekly</option>
+                      <option value="biweekly">Bi-weekly</option>
+                    </select>
+                  </label>
+                  <button class="primary-action" id="missionSubmit" type="submit">Add mission</button>
+                  <button class="small-action light hidden" id="cancelEdit" type="button">Cancel edit</button>
+                </form>
+              </section>
+
+              <section class="panel" aria-labelledby="manage-missions-title">
+                <h2 id="manage-missions-title">Manage missions</h2>
+                <div id="missionList" class="mission-list"></div>
+              </section>
+            </div>
+          </div>
+        </section>
+
+        <section class="view" id="spendView" data-view-panel="spend">
+          <div class="two-column">
+            <section class="panel" aria-labelledby="purchase-title">
+              <h2 id="purchase-title">Post a purchase</h2>
+              <form id="purchaseForm" class="stacked-form">
+                <label>
+                  <span>Product name</span>
+                  <input name="product" type="text" placeholder="Book fair bookmark" required />
+                </label>
+                <label>
+                  <span>Cost</span>
+                  <input name="cost" type="number" min="0.01" step="0.01" placeholder="3.50" required />
+                </label>
+                <label>
+                  <span>Location</span>
+                  <input name="location" type="text" placeholder="School store" required />
+                </label>
+                <label>
+                  <span>Notes</span>
+                  <textarea name="notes" rows="3" placeholder="Optional details"></textarea>
+                </label>
+                <button class="primary-action spend-action" type="submit">Subtract purchase</button>
+              </form>
+            </section>
+
+            <section class="panel" aria-labelledby="spending-title">
+              <h2 id="spending-title">Spending badges</h2>
+              <div id="spendBadges" class="badge-board"></div>
+            </section>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <div class="toast" id="toast" role="status" aria-live="polite">
+      <span id="toastMessage"></span>
+      <button class="toast-undo hidden" id="undoButton" type="button">Undo</button>
+    </div>
+    <div class="confetti" id="confetti" aria-hidden="true"></div>
+
+    <script src="./src/app.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+

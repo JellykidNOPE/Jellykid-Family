@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Classic Sprout in a hotdog suit</title>
+  <desc id="desc">The classic teal star mascot wearing a hotdog costume.</desc>
+  <defs>
+    <radialGradient id="sky" cx="50%" cy="36%" r="72%">
+      <stop stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#dff4ff"/>
+    </radialGradient>
+    <linearGradient id="sprout" x1="164" x2="342" y1="118" y2="428">
+      <stop stop-color="#74ded5"/>
+      <stop offset=".56" stop-color="#27b8b0"/>
+      <stop offset="1" stop-color="#148b86"/>
+    </linearGradient>
+    <linearGradient id="bun" x1="96" x2="414" y1="148" y2="414">
+      <stop stop-color="#ffe2a0"/>
+      <stop offset="1" stop-color="#de8e3e"/>
+    </linearGradient>
+  </defs>
+  <circle cx="256" cy="270" r="198" fill="url(#sky)"/>
+  <path d="M101 156c-54 48-62 165-20 250 27 56 75 70 112 40 32-27 30-91-2-168-32-79-47-151-90-122Z" fill="url(#bun)"/>
+  <path d="M411 156c54 48 62 165 20 250-27 56-75 70-112 40-32-27-30-91 2-168 32-79 47-151 90-122Z" fill="url(#bun)"/>
+  <ellipse cx="256" cy="301" rx="119" ry="161" fill="#c95849"/>
+  <path d="M256 74c34 0 58 43 76 79 8 16 23 28 41 31 44 7 73 25 78 55 5 31-28 57-65 75-15 7-24 23-22 40 5 51-17 94-51 102-24 6-46-10-57-41-11 31-33 47-57 41-34-8-56-51-51-102 2-17-7-33-22-40-37-18-70-44-65-75 5-30 34-48 78-55 18-3 33-15 41-31 18-36 42-79 76-79Z" fill="url(#sprout)"/>
+  <path d="M135 196c-20 8-35 22-38 39-4 23 19 43 49 58 9-29 20-58 32-82-12-12-27-18-43-15Z" fill="#ff856f"/>
+  <path d="M377 196c20 8 35 22 38 39 4 23-19 43-49 58-9-29-20-58-32-82 12-12 27-18 43-15Z" fill="#ff9a82"/>
+  <path d="M178 258c47 13 93-26 150-10 14 4 17 22 7 31-42 37-110 36-162 10-15-8-12-36 5-31Z" fill="#ffc857"/>
+  <path d="M189 270c43 12 90-22 138-8" fill="none" stroke="#fff5c7" stroke-width="13" stroke-linecap="round"/>
+  <ellipse cx="218" cy="292" rx="23" ry="29" fill="#fffdf8"/>
+  <ellipse cx="299" cy="292" rx="23" ry="29" fill="#fffdf8"/>
+  <ellipse cx="222" cy="294" rx="15" ry="21" fill="#17202a"/>
+  <ellipse cx="303" cy="294" rx="15" ry="21" fill="#17202a"/>
+  <circle cx="229" cy="286" r="6" fill="#fff"/>
+  <circle cx="310" cy="286" r="6" fill="#fff"/>
+  <circle cx="190" cy="324" r="16" fill="#ff806c"/>
+  <circle cx="322" cy="324" r="16" fill="#ff806c"/>
+  <path d="M226 356c18 21 43 21 61 0" fill="none" stroke="#17202a" stroke-width="12" stroke-linecap="round"/>
+  <ellipse cx="193" cy="442" rx="38" ry="22" fill="#ff7b64"/>
+  <ellipse cx="319" cy="442" rx="38" ry="22" fill="#ff7b64"/>
+</svg>

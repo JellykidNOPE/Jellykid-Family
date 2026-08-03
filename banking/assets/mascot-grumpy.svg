@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Grumpy Sprout mascot</title>
+  <desc id="desc">The classic Sprout mascot sitting on the floor with crossed arms and a grumpy face.</desc>
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="36%" r="72%">
+      <stop stop-color="#fffdf8"/>
+      <stop offset="1" stop-color="#dff4ff"/>
+    </radialGradient>
+    <linearGradient id="sprout" x1="154" x2="358" y1="94" y2="428">
+      <stop stop-color="#76dfd6"/>
+      <stop offset=".58" stop-color="#28b9b1"/>
+      <stop offset="1" stop-color="#148d88"/>
+    </linearGradient>
+  </defs>
+  <circle cx="256" cy="270" r="198" fill="url(#bg)"/>
+  <ellipse cx="256" cy="445" rx="128" ry="28" fill="#17202a" opacity=".12"/>
+  <path d="M256 76c34 0 58 42 76 78 8 16 23 28 41 31 43 7 72 25 77 55 5 31-28 57-64 74-16 8-25 23-23 40 4 49-18 88-52 98-21 7-41-4-55-29-14 25-34 36-55 29-34-10-56-49-52-98 2-17-7-32-23-40-36-17-69-43-64-74 5-30 34-48 77-55 18-3 33-15 41-31 18-36 42-78 76-78Z" fill="url(#sprout)"/>
+  <path d="M134 202c-20 8-35 22-38 39-4 24 21 45 52 59 7-31 17-61 31-86-13-10-29-15-45-12Z" fill="#ff856f"/>
+  <path d="M378 202c20 8 35 22 38 39 4 24-21 45-52 59-7-31-17-61-31-86 13-10 29-15 45-12Z" fill="#ff9a82"/>
+  <ellipse cx="218" cy="286" rx="23" ry="28" fill="#fffdf8"/>
+  <ellipse cx="299" cy="286" rx="23" ry="28" fill="#fffdf8"/>
+  <ellipse cx="222" cy="288" rx="15" ry="20" fill="#17202a"/>
+  <ellipse cx="303" cy="288" rx="15" ry="20" fill="#17202a"/>
+  <circle cx="228" cy="281" r="6" fill="#fff"/>
+  <circle cx="309" cy="281" r="6" fill="#fff"/>
+  <path d="M194 251c17-13 35-16 54-8" fill="none" stroke="#17202a" stroke-width="12" stroke-linecap="round"/>
+  <path d="M318 251c-17-13-35-16-54-8" fill="none" stroke="#17202a" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="190" cy="321" r="16" fill="#ff806c"/>
+  <circle cx="322" cy="321" r="16" fill="#ff806c"/>
+  <path d="M225 362c21-16 43-16 64 0" fill="none" stroke="#17202a" stroke-width="12" stroke-linecap="round"/>
+  <path d="M164 345c43 12 78 23 111 44" fill="none" stroke="#0f8b86" stroke-width="27" stroke-linecap="round"/>
+  <path d="M348 345c-43 12-78 23-111 44" fill="none" stroke="#0f8b86" stroke-width="27" stroke-linecap="round"/>
+  <ellipse cx="181" cy="436" rx="52" ry="23" fill="#ff7b64"/>
+  <ellipse cx="331" cy="436" rx="52" ry="23" fill="#ff7b64"/>
+</svg>

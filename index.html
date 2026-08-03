@@ -5,90 +5,109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="A friendly home for Jellykid family apps, stories, and learning adventures."
+      content="Play, read, and learn with the Jellykid Family collection of kid-friendly apps."
     />
-    <meta name="theme-color" content="#f7efe3" />
-    <title>Jellykid Family Apps</title>
+    <meta name="theme-color" content="#ffdc65" />
+    <title>Jellykid Family | Pick an Adventure!</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="page-shell">
-      <header class="site-header">
-        <a class="brand" href="#main-content" aria-label="Jellykid Family home">
-          <span class="brand-mark" aria-hidden="true">
-            <span></span><span></span><span></span>
-          </span>
-          <span>Jellykid Family</span>
-        </a>
-        <span class="header-note">Made for curious kids</span>
-      </header>
-
-      <main id="main-content">
-        <section class="hero" aria-labelledby="page-title">
-          <p class="eyebrow">Our family app shelf</p>
-          <h1 id="page-title">Pick an adventure<br /><em>and jump right in.</em></h1>
-          <p class="hero-copy">
-            Stories to explore and money skills to practice&mdash;all in one friendly place.
-          </p>
-        </section>
-
-        <section class="apps" aria-labelledby="apps-heading">
-          <div class="section-heading">
-            <div>
-              <p class="eyebrow">Ready when you are</p>
-              <h2 id="apps-heading">Choose an app</h2>
-            </div>
-            <p>More family favorites are on the way.</p>
-          </div>
-
-          <div class="app-grid">
-            <article class="app-card book-card">
-              <div class="card-top">
-                <div class="card-icon book-icon" aria-hidden="true">
-                  <span class="book-page left"></span>
-                  <span class="book-page right"></span>
-                  <span class="book-star">&#9733;</span>
-                </div>
-                <span class="card-number" aria-hidden="true">01</span>
-              </div>
-              <div class="card-copy">
-                <p class="card-label">Stories &amp; reading</p>
-                <h3>Picture Book Library</h3>
-                <p>Read interactive picture books and story adventures.</p>
-              </div>
-              <a class="app-button" href="PICTURE_BOOK_LINK_HERE">
-                <span>Open the library</span>
-                <span aria-hidden="true">&rarr;</span>
-              </a>
-            </article>
-
-            <article class="app-card banking-card">
-              <div class="card-top">
-                <div class="card-icon coin-icon" aria-hidden="true">
-                  <span class="coin coin-one">&cent;</span>
-                  <span class="coin coin-two">$</span>
-                  <span class="coin coin-three">&cent;</span>
-                </div>
-                <span class="card-number" aria-hidden="true">02</span>
-              </div>
-              <div class="card-copy">
-                <p class="card-label">Money practice</p>
-                <h3>Kids Banking App</h3>
-                <p>Practice saving, spending, counting, and money choices.</p>
-              </div>
-              <a class="app-button" href="BANKING_APP_LINK_HERE">
-                <span>Start practicing</span>
-                <span aria-hidden="true">&rarr;</span>
-              </a>
-            </article>
-          </div>
-        </section>
-      </main>
-
-      <footer>
-        <p>Made with care for growing minds.</p>
-        <span aria-hidden="true">&#10022;</span>
-      </footer>
+    <div class="sky-doodles" aria-hidden="true">
+      <span class="doodle star-one">&#9733;</span>
+      <span class="doodle star-two">&#10022;</span>
+      <span class="doodle circle-one"></span>
+      <span class="doodle circle-two"></span>
+      <span class="doodle squiggle">~~~</span>
     </div>
+
+    <header class="site-header">
+      <a class="brand" href="#adventures" aria-label="Jellykid Family home">
+        <span class="brand-face" aria-hidden="true">
+          <i></i><i></i><b></b>
+        </span>
+        <span>
+          <small>Welcome to</small>
+          <strong>Jellykid Family!</strong>
+        </span>
+      </a>
+      <div class="header-bubble" aria-hidden="true">Play &#8226; Read &#8226; Learn</div>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="page-title">
+        <div class="hero-copy">
+          <p class="kicker"><span aria-hidden="true">&#10022;</span> Your fun starts here!</p>
+          <h1 id="page-title">What should we<br /><em>explore today?</em></h1>
+          <p>Choose an adventure below. Read a story, learn about money, and have fun while you grow!</p>
+          <a class="jump-button" href="#adventures">Pick an app <span aria-hidden="true">&#8595;</span></a>
+        </div>
+
+        <div class="hero-playground" aria-hidden="true">
+          <div class="sun"><span></span></div>
+          <div class="cloud cloud-one"></div>
+          <div class="cloud cloud-two"></div>
+          <div class="rainbow">
+            <i></i><i></i><i></i><i></i>
+          </div>
+          <div class="hero-message">Two awesome<br /><strong>adventures!</strong></div>
+        </div>
+      </section>
+
+      <section class="adventures" id="adventures" aria-labelledby="apps-heading">
+        <div class="section-heading">
+          <p>Choose your next stop</p>
+          <h2 id="apps-heading">Tap a card to jump in!</h2>
+        </div>
+
+        <div class="app-grid">
+          <a class="app-card story-card" href="picture-books/" aria-label="Open Picture Book Library">
+            <span class="card-sticker">Story time!</span>
+            <div class="art-window story-art">
+              <span class="art-spark spark-a" aria-hidden="true">&#10022;</span>
+              <span class="art-spark spark-b" aria-hidden="true">&#9733;</span>
+              <img
+                src="assets/picture-book-cover.png"
+                alt="The Backroad Brigade picture book cover"
+              />
+            </div>
+            <div class="card-copy">
+              <span class="card-eyebrow">Books &amp; big adventures</span>
+              <h3>Picture Book Library</h3>
+              <p>Read interactive picture books and story adventures.</p>
+              <span class="app-button">
+                Start reading <b aria-hidden="true">&#8594;</b>
+              </span>
+            </div>
+          </a>
+
+          <a class="app-card bank-card" href="banking/" aria-label="Open Kids Banking App">
+            <span class="card-sticker">Money mission!</span>
+            <div class="art-window bank-art">
+              <span class="coin coin-a" aria-hidden="true">$</span>
+              <span class="coin coin-b" aria-hidden="true">&#162;</span>
+              <img
+                src="assets/sprout-mascot.png"
+                alt="Sprout Bank's cheerful green mascot"
+              />
+            </div>
+            <div class="card-copy">
+              <span class="card-eyebrow">Save, spend &amp; practice</span>
+              <h3>Kids Banking App</h3>
+              <p>Practice saving, spending, counting, and money choices.</p>
+              <span class="app-button">
+                Visit Sprout Bank <b aria-hidden="true">&#8594;</b>
+              </span>
+            </div>
+          </a>
+        </div>
+
+        <p class="more-note"><span aria-hidden="true">&#9733;</span> More Jellykid adventures are coming soon!</p>
+      </section>
+    </main>
+
+    <footer>
+      <span>Made for curious kids and their grown-ups.</span>
+      <span class="footer-faces" aria-hidden="true">&#9786; &#9786; &#9786;</span>
+    </footer>
   </body>
 </html>

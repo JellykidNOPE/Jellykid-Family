@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Classic Sprout dressed royally</title>
+  <desc id="desc">The classic teal star mascot wearing a crown and royal cape.</desc>
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="34%" r="72%">
+      <stop stop-color="#fffdf8"/>
+      <stop offset="1" stop-color="#fff0ef"/>
+    </radialGradient>
+    <linearGradient id="sprout" x1="154" x2="360" y1="88" y2="436">
+      <stop stop-color="#76dfd6"/>
+      <stop offset=".58" stop-color="#28b9b1"/>
+      <stop offset="1" stop-color="#148d88"/>
+    </linearGradient>
+    <linearGradient id="cape" x1="112" x2="400" y1="268" y2="476">
+      <stop stop-color="#ff91aa"/>
+      <stop offset="1" stop-color="#8f63d8"/>
+    </linearGradient>
+  </defs>
+  <circle cx="256" cy="270" r="198" fill="url(#bg)"/>
+  <path d="M139 270c-34 44-46 111-30 174 36 19 89 29 147 29s111-10 147-29c16-63 4-130-30-174-67 44-167 44-234 0Z" fill="url(#cape)"/>
+  <path d="M256 73c34 0 58 43 76 79 8 16 23 28 41 31 44 7 73 25 78 55 5 31-28 57-65 75-15 7-24 23-22 40 5 51-17 94-51 102-24 6-46-10-57-41-11 31-33 47-57 41-34-8-56-51-51-102 2-17-7-33-22-40-37-18-70-44-65-75 5-30 34-48 78-55 18-3 33-15 41-31 18-36 42-79 76-79Z" fill="url(#sprout)"/>
+  <path d="M134 196c-20 8-35 22-38 39-4 24 21 45 52 59 7-31 17-61 31-86-13-10-29-15-45-12Z" fill="#ff856f"/>
+  <path d="M378 196c20 8 35 22 38 39 4 24-21 45-52 59-7-31-17-61-31-86 13-10 29-15 45-12Z" fill="#ff9a82"/>
+  <path d="M169 139l35-72 52 57 52-57 35 72c-51 25-123 25-174 0Z" fill="#ffc857"/>
+  <circle cx="204" cy="101" r="13" fill="#fff7dc"/>
+  <circle cx="256" cy="115" r="13" fill="#fff7dc"/>
+  <circle cx="308" cy="101" r="13" fill="#fff7dc"/>
+  <ellipse cx="218" cy="292" rx="23" ry="29" fill="#fffdf8"/>
+  <ellipse cx="299" cy="292" rx="23" ry="29" fill="#fffdf8"/>
+  <ellipse cx="222" cy="294" rx="15" ry="21" fill="#17202a"/>
+  <ellipse cx="303" cy="294" rx="15" ry="21" fill="#17202a"/>
+  <circle cx="229" cy="286" r="6" fill="#fff"/>
+  <circle cx="310" cy="286" r="6" fill="#fff"/>
+  <circle cx="190" cy="326" r="16" fill="#ff806c"/>
+  <circle cx="322" cy="326" r="16" fill="#ff806c"/>
+  <path d="M226 358c18 20 43 20 61 0" fill="none" stroke="#17202a" stroke-width="12" stroke-linecap="round"/>
+  <ellipse cx="193" cy="443" rx="38" ry="22" fill="#ff7b64"/>
+  <ellipse cx="319" cy="443" rx="38" ry="22" fill="#ff7b64"/>
+  <path d="M355 183l18 15 25-10-11 25 19 20-27-2-15 23-7-26-26-7 23-14Z" fill="#fff7dc"/>
+</svg>
