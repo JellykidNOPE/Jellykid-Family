@@ -1,2 +1,2 @@
-:HL["/Jellykid-Family/picture-books/_next/static/chunks/12i26sasm06qa.css","style"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}},"staleTime":300,"buildId":"z1-aGm_zKyDZB7H2HhMRZ"}
+:HL["/Jellykid-Family/picture-books/_next/static/chunks/0igznu.h6k8j5.css","style"]
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}},"staleTime":300,"buildId":"Y7WBYI9zqKAL5BQwC3YNk"}
