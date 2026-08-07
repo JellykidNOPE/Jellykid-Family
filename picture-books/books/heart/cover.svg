@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1536" viewBox="0 0 1024 1536" role="img" aria-labelledby="heart-cover-title heart-cover-desc">
+  <title id="heart-cover-title">HEART customer care model</title>
+  <desc id="heart-cover-desc">A cream and forest-green book cover with the word HEART, five colored letter badges, a heart symbol, and the words Hear, Empathize, Apologize, Resolve, and Thank.</desc>
+  <rect width="1024" height="1536" fill="#FFFAF0"/>
+  <rect x="36" y="36" width="952" height="1464" rx="42" fill="none" stroke="#294A40" stroke-width="8"/>
+
+  <text x="512" y="164" fill="#294A40" font-family="Trebuchet MS, Arial Rounded MT Bold, Arial, sans-serif" font-size="32" font-weight="700" letter-spacing="8" text-anchor="middle">THE CUSTOMER CARE MODEL</text>
+  <text x="512" y="358" fill="#1D2B29" font-family="Trebuchet MS, Arial Rounded MT Bold, Arial, sans-serif" font-size="174" font-weight="900" letter-spacing="5" text-anchor="middle">HEART</text>
+
+  <g font-family="Trebuchet MS, Arial Rounded MT Bold, Arial, sans-serif" font-size="60" font-weight="900" text-anchor="middle">
+    <circle cx="172" cy="470" r="58" fill="#BFE1DA" stroke="#2F6F68" stroke-width="6"/>
+    <text x="172" y="491" fill="#1D2B29">H</text>
+    <circle cx="342" cy="470" r="58" fill="#F1D58E" stroke="#946514" stroke-width="6"/>
+    <text x="342" y="491" fill="#1D2B29">E</text>
+    <circle cx="512" cy="470" r="58" fill="#E8B3A3" stroke="#9C4935" stroke-width="6"/>
+    <text x="512" y="491" fill="#1D2B29">A</text>
+    <circle cx="682" cy="470" r="58" fill="#BDD0DE" stroke="#3F647E" stroke-width="6"/>
+    <text x="682" y="491" fill="#1D2B29">R</text>
+    <circle cx="852" cy="470" r="58" fill="#C7D9C8" stroke="#3F6649" stroke-width="6"/>
+    <text x="852" y="491" fill="#1D2B29">T</text>
+  </g>
+
+  <path d="M512 944 C468 903 286 759 286 629 C286 520 407 470 480 548 C494 563 505 581 512 599 C519 581 530 563 544 548 C617 470 738 520 738 629 C738 759 556 903 512 944 Z" fill="#FFFAF0" stroke="#294A40" stroke-width="26" stroke-linejoin="round"/>
+  <path d="M437 681 C459 648 486 634 512 634 C538 634 565 648 587 681" fill="none" stroke="#C89236" stroke-width="22" stroke-linecap="round"/>
+  <circle cx="423" cy="712" r="16" fill="#AA5C3F"/>
+  <circle cx="601" cy="712" r="16" fill="#AA5C3F"/>
+  <path d="M424 776 C474 824 550 824 600 776" fill="none" stroke="#294A40" stroke-width="22" stroke-linecap="round"/>
+
+  <g font-family="Trebuchet MS, Arial Rounded MT Bold, Arial, sans-serif">
+    <g transform="translate(170 1018)">
+      <rect width="684" height="64" rx="24" fill="#BFE1DA"/>
+      <circle cx="48" cy="32" r="24" fill="#2F6F68"/>
+      <text x="48" y="43" fill="#FFFAF0" font-size="31" font-weight="900" text-anchor="middle">H</text>
+      <text x="96" y="43" fill="#1D2B29" font-size="34" font-weight="800">Hear</text>
+    </g>
+    <g transform="translate(170 1095)">
+      <rect width="684" height="64" rx="24" fill="#F1D58E"/>
+      <circle cx="48" cy="32" r="24" fill="#946514"/>
+      <text x="48" y="43" fill="#FFFAF0" font-size="31" font-weight="900" text-anchor="middle">E</text>
+      <text x="96" y="43" fill="#1D2B29" font-size="34" font-weight="800">Empathize</text>
+    </g>
+    <g transform="translate(170 1172)">
+      <rect width="684" height="64" rx="24" fill="#E8B3A3"/>
+      <circle cx="48" cy="32" r="24" fill="#9C4935"/>
+      <text x="48" y="43" fill="#FFFAF0" font-size="31" font-weight="900" text-anchor="middle">A</text>
+      <text x="96" y="43" fill="#1D2B29" font-size="34" font-weight="800">Apologize</text>
+    </g>
+    <g transform="translate(170 1249)">
+      <rect width="684" height="64" rx="24" fill="#BDD0DE"/>
+      <circle cx="48" cy="32" r="24" fill="#3F647E"/>
+      <text x="48" y="43" fill="#FFFAF0" font-size="31" font-weight="900" text-anchor="middle">R</text>
+      <text x="96" y="43" fill="#1D2B29" font-size="34" font-weight="800">Resolve</text>
+    </g>
+    <g transform="translate(170 1326)">
+      <rect width="684" height="64" rx="24" fill="#C7D9C8"/>
+      <circle cx="48" cy="32" r="24" fill="#3F6649"/>
+      <text x="48" y="43" fill="#FFFAF0" font-size="31" font-weight="900" text-anchor="middle">T</text>
+      <text x="96" y="43" fill="#1D2B29" font-size="34" font-weight="800">Thank</text>
+    </g>
+  </g>
+</svg>

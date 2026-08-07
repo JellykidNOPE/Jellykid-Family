@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="1024" viewBox="0 0 1536 1024" role="img" aria-labelledby="hear-title hear-desc">
+  <title id="hear-title">H — Hear</title>
+  <desc id="hear-desc">A large letter H beside the word Hear and a simple ear with incoming sound waves. H is highlighted in the HEART progress rail.</desc>
+  <rect width="1536" height="1024" fill="#FFFAF0"/>
+  <rect x="36" y="36" width="1464" height="952" rx="42" fill="none" stroke="#294A40" stroke-width="8"/>
+  <rect x="84" y="84" width="520" height="780" rx="48" fill="#BFE1DA"/>
+  <text x="344" y="632" fill="#1D2B29" font-family="Trebuchet MS, Arial Rounded MT Bold, Arial, sans-serif" font-size="520" font-weight="900" text-anchor="middle">H</text>
+
+  <text x="668" y="218" fill="#1D2B29" font-family="Trebuchet MS, Arial Rounded MT Bold, Arial, sans-serif" font-size="132" font-weight="900" letter-spacing="5">HEAR</text>
+  <text x="674" y="270" fill="#2F6F68" font-family="Trebuchet MS, Arial, sans-serif" font-size="30" font-weight="700" letter-spacing="5">LISTEN ALL THE WAY THROUGH</text>
+
+  <circle cx="1072" cy="528" r="226" fill="#BFE1DA"/>
+  <g fill="none" stroke="#2F6F68" stroke-width="25" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M1090 680 C1035 680 1008 646 1017 596 C1025 552 1063 535 1085 503 C1119 454 1102 397 1048 389 C986 380 943 425 946 485"/>
+    <path d="M1022 572 C1036 538 1081 526 1081 480 C1081 449 1054 432 1027 442 C1005 450 993 470 997 493"/>
+    <path d="M905 448 C879 486 879 532 905 570"/>
+    <path d="M858 407 C816 466 816 549 858 608"/>
+  </g>
+
+  <g font-family="Trebuchet MS, Arial Rounded MT Bold, Arial, sans-serif" font-size="34" font-weight="900" text-anchor="middle">
+    <path d="M736 916 H1304" fill="none" stroke="#D5CBB9" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="736" cy="916" r="42" fill="#2F6F68"/>
+    <text x="736" y="928" fill="#FFFAF0">H</text>
+    <circle cx="878" cy="916" r="42" fill="#FFFAF0" stroke="#294A40" stroke-width="5"/>
+    <text x="878" y="928" fill="#1D2B29">E</text>
+    <circle cx="1020" cy="916" r="42" fill="#FFFAF0" stroke="#294A40" stroke-width="5"/>
+    <text x="1020" y="928" fill="#1D2B29">A</text>
+    <circle cx="1162" cy="916" r="42" fill="#FFFAF0" stroke="#294A40" stroke-width="5"/>
+    <text x="1162" y="928" fill="#1D2B29">R</text>
+    <circle cx="1304" cy="916" r="42" fill="#FFFAF0" stroke="#294A40" stroke-width="5"/>
+    <text x="1304" y="928" fill="#1D2B29">T</text>
+  </g>
+</svg>
