@@ -1,4 +1,7 @@
 ﻿const STORAGE_KEY = "sprout-bank-state-v1";
+const PARENT_ACCOUNT_KEY = "sprout-bank-parent-account-v1";
+const PARENT_SESSION_KEY = "sprout-bank-parent-session-v1";
+const DEVICE_CHILD_KEY = "sprout-bank-device-child-v1";
 const colors = ["#1fa6a0", "#f06464", "#ffc857", "#69b578", "#8f63d8", "#4b8fda"];
 const laughMascots = ["./assets/mascot-laugh.png", "./assets/mascot-laugh-back.png"];
 const defaultMascot = "./assets/mascot.png";
@@ -114,7 +117,9 @@ const sampleState = {
   }
 };
 
-let state = loadState();
+let parentAccount = loadParentAccount();
+let parentLoggedIn = sessionStorage.getItem(PARENT_SESSION_KEY) === "true" && Boolean(parentAccount);
+let state = loadAssignedChildState(loadState());
 let chartMode = "bar";
 let parentMode = "approvals";
 let audioContext = null;
@@ -134,6 +139,16 @@ const els = {
   panels: document.querySelectorAll("[data-view-panel]"),
   parentPanels: document.querySelectorAll("[data-parent-panel]"),
   childName: document.querySelector("#childName"),
+  parentAccountStatus: document.querySelector("#parentAccountStatus"),
+  parentLoginForm: document.querySelector("#parentLoginForm"),
+  parentEmail: document.querySelector("#parentEmail"),
+  parentPassword: document.querySelector("#parentPassword"),
+  parentLoginSubmit: document.querySelector("#parentLoginSubmit"),
+  parentLogout: document.querySelector("#parentLogout"),
+  childManager: document.querySelector("#childManager"),
+  childAccountSelect: document.querySelector("#childAccountSelect"),
+  childAccountForm: document.querySelector("#childAccountForm"),
+  childAccountName: document.querySelector("#childAccountName"),
   adultMode: document.querySelector("#adultMode"),
   soundEffects: document.querySelector("#soundEffects"),
   tokenCurrency: document.querySelector("#tokenCurrency"),
@@ -250,10 +265,15 @@ function sanitizeLearning(learning = {}) {
   const wordLetters = Array.isArray(learning.wordLetters) && learning.wordLetters.length ? learning.wordLetters : shuffleLetters(word.split(""));
   const wordPlaced = Array.isArray(learning.wordPlaced) && learning.wordPlaced.length === word.length ? learning.wordPlaced : Array(word.length).fill(null);
   const correctCount = Math.min(Math.max(Number(learning.correctCount) || 0, 0), learningRewardTarget - 1);
+  let additionProblem = sanitizeProblem(learning.additionProblem || (learning.mathProblem?.operator === "+" ? learning.mathProblem : null), () => createMathProblem("+"));
+  let subtractionProblem = sanitizeProblem(learning.subtractionProblem || (learning.mathProblem?.operator === "-" ? learning.mathProblem : null), () => createMathProblem("-"));
+  if (additionProblem.operator !== "+" || additionProblem.answer > 10) additionProblem = createMathProblem("+");
+  if (subtractionProblem.operator !== "-" || subtractionProblem.answer > 10) subtractionProblem = createMathProblem("-");
+
   return {
     screen,
-    additionProblem: sanitizeProblem(learning.additionProblem || (learning.mathProblem?.operator === "+" ? learning.mathProblem : null), () => createMathProblem("+")),
-    subtractionProblem: sanitizeProblem(learning.subtractionProblem || (learning.mathProblem?.operator === "-" ? learning.mathProblem : null), () => createMathProblem("-")),
+    additionProblem,
+    subtractionProblem,
     countingProblem: sanitizeProblem(learning.countingProblem, createCountingProblem),
     countMixProblem: sanitizeCountMixProblem(learning.countMixProblem),
     countingMode: ["simple", "mixed"].includes(learning.countingMode) ? learning.countingMode : randomCountingMode(),
@@ -305,8 +325,82 @@ function sanitizeRewards(rewards = {}) {
   };
 }
 
+function loadParentAccount() {
+  const saved = localStorage.getItem(PARENT_ACCOUNT_KEY);
+  if (!saved) return null;
+  try {
+    return sanitizeParentAccount(JSON.parse(saved));
+  } catch {
+    return null;
+  }
+}
+
+function sanitizeParentAccount(account) {
+  if (!account || !Array.isArray(account.children)) return null;
+  const children = account.children.map((child) => ({
+    id: typeof child.id === "string" && child.id ? child.id : makeId(),
+    name: typeof child.name === "string" && child.name.trim() ? child.name.trim() : "Kid profile",
+    state: sanitizeState({ ...structuredClone(sampleState), ...(child.state || {}), adultMode: false })
+  }));
+
+  return {
+    email: typeof account.email === "string" ? account.email : "",
+    passwordHash: typeof account.passwordHash === "string" ? account.passwordHash : "",
+    activeChildId: children.some((child) => child.id === account.activeChildId) ? account.activeChildId : children[0]?.id || null,
+    children,
+    createdAt: account.createdAt || new Date().toISOString()
+  };
+}
+
+function saveParentAccount() {
+  if (parentAccount) localStorage.setItem(PARENT_ACCOUNT_KEY, JSON.stringify(parentAccount));
+}
+
+function simpleHash(value) {
+  let hash = 2166136261;
+  for (const char of String(value)) {
+    hash ^= char.charCodeAt(0);
+    hash = Math.imul(hash, 16777619);
+  }
+  return (hash >>> 0).toString(16);
+}
+
+function childSnapshot() {
+  return sanitizeState({ ...structuredClone(state), adultMode: false });
+}
+
+function assignedChildId() {
+  return localStorage.getItem(DEVICE_CHILD_KEY) || parentAccount?.activeChildId || null;
+}
+
+function activeChildProfile() {
+  if (!parentAccount) return null;
+  const id = assignedChildId();
+  return parentAccount.children.find((child) => child.id === id) || parentAccount.children[0] || null;
+}
+
+function loadAssignedChildState(fallback) {
+  if (!parentAccount?.children?.length) return fallback;
+  const child = activeChildProfile();
+  if (!child) return fallback;
+  localStorage.setItem(DEVICE_CHILD_KEY, child.id);
+  parentAccount.activeChildId = child.id;
+  return sanitizeState({ ...structuredClone(child.state), childName: child.name, adultMode: false });
+}
+
+function syncActiveChildProfile() {
+  const child = activeChildProfile();
+  if (!child) return;
+  const snapshot = childSnapshot();
+  child.name = snapshot.childName.trim() || child.name;
+  child.state = snapshot;
+  parentAccount.activeChildId = child.id;
+  saveParentAccount();
+}
+
 function saveState() {
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+  syncActiveChildProfile();
+  localStorage.setItem(STORAGE_KEY, JSON.stringify({ ...state, adultMode: false }));
 }
 
 function money(value) {
@@ -366,6 +460,7 @@ function render() {
     els.heroMascot.src = currentMascotImage();
   }
   els.childName.value = state.childName;
+  els.childName.disabled = Boolean(parentAccount && !parentLoggedIn);
   els.adultMode.checked = state.adultMode;
   els.soundEffects.checked = state.soundOn;
   els.tokenCurrency.checked = state.useTokenCurrency;
@@ -391,6 +486,7 @@ function render() {
   renderShop();
   renderShopPanel();
   renderSettingsPanel();
+  renderParentAccountPanel();
   renderAdultControls();
   drawChart();
   renderLearning();
@@ -859,6 +955,49 @@ function renderSettingsPanel() {
   if (els.undoLastAction) {
     els.undoLastAction.disabled = !undoSnapshot;
   }
+}
+
+function renderParentAccountPanel() {
+  if (!els.parentAccountStatus || !els.parentLoginForm) return;
+  const hasAccount = Boolean(parentAccount);
+  const child = activeChildProfile();
+
+  els.parentAccountStatus.textContent = !hasAccount
+    ? "Create one parent login"
+    : parentLoggedIn
+      ? `Logged in as ${parentAccount.email || "parent"}`
+      : "Parent login required";
+
+  els.parentLoginForm.classList.toggle("hidden", hasAccount && parentLoggedIn);
+  els.parentLogout?.classList.toggle("hidden", !hasAccount || !parentLoggedIn);
+  els.childManager?.classList.toggle("hidden", !hasAccount || !parentLoggedIn);
+
+  if (els.parentEmail) {
+    els.parentEmail.value = hasAccount ? parentAccount.email : els.parentEmail.value;
+    els.parentEmail.disabled = hasAccount;
+    els.parentEmail.required = !hasAccount;
+  }
+  if (els.parentPassword) {
+    els.parentPassword.placeholder = hasAccount ? "Parent password" : "Create password";
+    els.parentPassword.required = true;
+  }
+  if (els.parentLoginSubmit) {
+    els.parentLoginSubmit.textContent = hasAccount ? "Log in parent" : "Create parent login";
+  }
+  if (els.childAccountSelect && parentAccount?.children?.length) {
+    els.childAccountSelect.innerHTML = parentAccount.children
+      .map((entry) => `<option value="${entry.id}" ${entry.id === child?.id ? "selected" : ""}>${escapeHtml(entry.name)}</option>`)
+      .join("");
+  }
+}
+
+function confirmParentPassword(actionLabel = "This action") {
+  if (!parentAccount) return confirmAdultMode();
+  const password = prompt(`${actionLabel} needs the parent password.`);
+  if (password && simpleHash(password) === parentAccount.passwordHash) return true;
+  playSound("low");
+  showToast("Parent password did not match.");
+  return false;
 }
 
 function drawChart() {
@@ -2158,6 +2297,89 @@ document.body.addEventListener("drop", (event) => {
   placeWordLetter(draggedIndex === "" ? state.learning.selectedWordIndex : draggedIndex, slot.dataset.wordSlot);
 });
 
+function handleParentLogin(event) {
+  event.preventDefault();
+  const email = els.parentEmail?.value.trim() || "";
+  const password = els.parentPassword?.value || "";
+  if (password.length < 4) {
+    showToast("Use at least 4 characters for the parent password.");
+    return;
+  }
+
+  if (!parentAccount) {
+    const childName = state.childName.trim() || "Kid profile";
+    const child = { id: makeId(), name: childName, state: sanitizeState({ ...structuredClone(state), childName, adultMode: false }) };
+    parentAccount = { email, passwordHash: simpleHash(password), activeChildId: child.id, children: [child], createdAt: new Date().toISOString() };
+    parentLoggedIn = true;
+    sessionStorage.setItem(PARENT_SESSION_KEY, "true");
+    localStorage.setItem(DEVICE_CHILD_KEY, child.id);
+    saveParentAccount();
+    showToast("Parent login created. This device is assigned to this child.");
+    els.parentPassword.value = "";
+    render();
+    return;
+  }
+
+  if (simpleHash(password) !== parentAccount.passwordHash) {
+    playSound("low");
+    showToast("Parent password did not match.");
+    return;
+  }
+
+  parentLoggedIn = true;
+  sessionStorage.setItem(PARENT_SESSION_KEY, "true");
+  els.parentPassword.value = "";
+  playSound("success");
+  showToast("Parent logged in.");
+  render();
+}
+
+function logoutParent() {
+  parentLoggedIn = false;
+  state.adultMode = false;
+  sessionStorage.removeItem(PARENT_SESSION_KEY);
+  showToast("Parent logged out. Kid mode on.");
+  render();
+}
+
+function switchAssignedChild(childId) {
+  if (!parentLoggedIn || !parentAccount?.children?.some((child) => child.id === childId)) return;
+  saveState();
+  localStorage.setItem(DEVICE_CHILD_KEY, childId);
+  parentAccount.activeChildId = childId;
+  const child = activeChildProfile();
+  state = sanitizeState({ ...structuredClone(child.state), childName: child.name, adultMode: false });
+  saveParentAccount();
+  showToast(`This device is now assigned to ${child.name}.`);
+  render();
+}
+
+function addChildProfile(event) {
+  event.preventDefault();
+  if (!parentLoggedIn || !parentAccount) {
+    showToast("Log in as parent to add a child.");
+    return;
+  }
+  const name = els.childAccountName?.value.trim();
+  if (!name) return;
+  saveState();
+  const newState = sanitizeState({ ...structuredClone(sampleState), childName: name, soundOn: state.soundOn, useTokenCurrency: state.useTokenCurrency, adultMode: false });
+  const child = { id: makeId(), name, state: newState };
+  parentAccount.children.push(child);
+  parentAccount.activeChildId = child.id;
+  localStorage.setItem(DEVICE_CHILD_KEY, child.id);
+  state = sanitizeState({ ...structuredClone(newState), adultMode: false });
+  els.childAccountName.value = "";
+  saveParentAccount();
+  showToast(`${name} added and assigned to this device.`);
+  render();
+}
+
+els.parentLoginForm?.addEventListener("submit", handleParentLogin);
+els.parentLogout?.addEventListener("click", logoutParent);
+els.childAccountSelect?.addEventListener("change", (event) => switchAssignedChild(event.target.value));
+els.childAccountForm?.addEventListener("submit", addChildProfile);
+
 els.childName.addEventListener("input", (event) => {
   state.childName = event.target.value;
   render();
@@ -2171,7 +2393,16 @@ els.adultMode.addEventListener("change", (event) => {
     return;
   }
 
-  if (confirmAdultMode()) {
+  if (parentAccount && !parentLoggedIn) {
+    state.adultMode = false;
+    event.target.checked = false;
+    settingsOpen = true;
+    showToast("Log in as parent before turning on adult mode.");
+    render();
+    return;
+  }
+
+  if (parentLoggedIn || confirmAdultMode()) {
     state.adultMode = true;
     playSound("success");
     showToast("Adult mode on.");
@@ -2229,8 +2460,12 @@ els.purchaseForm.addEventListener("submit", (event) => {
 });
 
 els.resetDemo.addEventListener("click", () => {
+  if (!confirmParentPassword("Reset board")) return;
+  const childName = activeChildProfile()?.name || state.childName;
   captureUndo("Reset");
   state = structuredClone(sampleState);
+  state.childName = childName;
+  state.soundOn = els.soundEffects?.checked ?? state.soundOn;
   celebrate("Mission board reset.", { undo: true });
   render();
 });

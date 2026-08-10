@@ -423,6 +423,40 @@ button:disabled {
   font-size: 1rem;
 }
 
+.account-card {
+  display: grid;
+  gap: 10px;
+  margin-top: 14px;
+  padding: 12px;
+  border: 1px solid rgba(31, 166, 160, 0.18);
+  border-radius: 8px;
+  background: linear-gradient(145deg, rgba(223, 244, 255, 0.78), rgba(232, 248, 238, 0.78));
+}
+
+.account-heading {
+  display: grid;
+  gap: 3px;
+}
+
+.account-heading strong {
+  font-size: 0.92rem;
+}
+
+.mini-form,
+.child-manager {
+  display: grid;
+  gap: 8px;
+}
+
+.mini-form.compact {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.settings-action.light {
+  background: white;
+  border: 1px solid var(--line);
+}
+
 .settings-toggle {
   width: 100%;
   min-height: 42px;

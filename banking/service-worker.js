@@ -1,4 +1,4 @@
-﻿const CACHE_NAME = "sprout-bank-v43";
+﻿const CACHE_NAME = "sprout-bank-v44";
 const APP_ASSETS = [
   "./",
   "./index.html",

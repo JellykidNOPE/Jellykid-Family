@@ -53,6 +53,28 @@
             <span>Child name</span>
             <input id="childName" type="text" autocomplete="off" />
           </label>
+          <div class="account-card" id="parentAccountPanel">
+            <div class="account-heading">
+              <span>Family login</span>
+              <strong id="parentAccountStatus">No parent account yet</strong>
+            </div>
+            <form id="parentLoginForm" class="mini-form">
+              <input id="parentEmail" type="email" autocomplete="username" placeholder="Parent email" />
+              <input id="parentPassword" type="password" autocomplete="current-password" placeholder="Parent password" />
+              <button class="settings-action" id="parentLoginSubmit" type="submit">Create parent login</button>
+            </form>
+            <button class="settings-action light hidden" id="parentLogout" type="button">Log out parent</button>
+            <div class="child-manager hidden" id="childManager">
+              <label>
+                <span>This device is for</span>
+                <select id="childAccountSelect"></select>
+              </label>
+              <form id="childAccountForm" class="mini-form compact">
+                <input id="childAccountName" type="text" autocomplete="off" placeholder="Add child name" />
+                <button class="settings-action" type="submit">Add child</button>
+              </form>
+            </div>
+          </div>
           <button class="settings-toggle" type="button" data-toggle-settings aria-expanded="false" aria-controls="settingsPanel">Settings</button>
           <div class="settings-panel hidden" id="settingsPanel">
             <label class="toggle">
