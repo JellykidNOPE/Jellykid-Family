@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img">
+  <defs>
+    <filter id="shadow" x="-25%" y="-25%" width="150%" height="160%">
+      <feDropShadow dx="0" dy="7" stdDeviation="4" flood-color="#17202a" flood-opacity=".24"/>
+    </filter>
+    <linearGradient id="shine" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#fff" stop-opacity=".7"/>
+      <stop offset=".55" stop-color="#fff" stop-opacity=".15"/>
+      <stop offset="1" stop-color="#17202a" stop-opacity=".08"/>
+    </linearGradient>
+  </defs>
+  <g filter="url(#shadow)" stroke="#26323d" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="42" cy="37" r="11" fill="#f7c18a"/>
+    <path d="M31 36 C34 21 54 23 55 37" fill="#7c522f"/>
+    <rect x="28" y="50" width="30" height="37" rx="10" fill="#8ee2a4"/>
+    <path d="M36 55 L23 59"/><path d="M50 55 L62 49"/><path d="M39 83 L32 103"/><path d="M50 83 L57 103"/><path d="M74 54 H116 L110 112 H81 Z" fill="#fff7df"/>
+    <path d="M78 72 H112 L109 97 H81 Z" fill="#f2a64a" stroke-width="3"/>
+    <path d="M82 47 H109" stroke="#26323d" stroke-width="7"/>
+    <path d="M82 37 C78 28 93 27 88 17" fill="none" stroke="#8fcce8" stroke-width="4"/>
+    <path d="M102 37 C98 27 114 27 109 16" fill="none" stroke="#8fcce8" stroke-width="4"/><rect x="14" y="83" width="66" height="20" rx="8" fill="#7c522f"/><path d="M21 74 H70" stroke="#fff7df" stroke-width="7"/>
+  </g>
+</svg>

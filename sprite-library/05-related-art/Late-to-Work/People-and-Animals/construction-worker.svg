@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img">
+  <defs>
+    <filter id="shadow" x="-25%" y="-25%" width="150%" height="160%">
+      <feDropShadow dx="0" dy="7" stdDeviation="4" flood-color="#17202a" flood-opacity=".24"/>
+    </filter>
+    <linearGradient id="shine" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#fff" stop-opacity=".7"/>
+      <stop offset=".55" stop-color="#fff" stop-opacity=".15"/>
+      <stop offset="1" stop-color="#17202a" stop-opacity=".08"/>
+    </linearGradient>
+  </defs>
+  <g filter="url(#shadow)" stroke="#26323d" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="41" cy="37" r="11" fill="#f7c18a"/>
+    <path d="M30 36 C33 21 53 23 54 37" fill="#7c522f"/>
+    <rect x="27" y="50" width="30" height="37" rx="10" fill="#ffd76a"/>
+    <path d="M35 55 L22 59"/><path d="M49 55 L61 49"/><path d="M38 83 L31 103"/><path d="M49 83 L56 103"/><path d="M27 35 H55 L50 22 H32 Z" fill="#f2a64a"/><path d="M73 37 L100 92" stroke="#f2a64a" stroke-width="9"/><path d="M57 92 H115" stroke="#f2a64a" stroke-width="9" stroke-dasharray="12 9"/>
+  </g>
+</svg>

@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 220" role="img">
+  <defs>
+    <filter id="softShadow" x="-25%" y="-25%" width="150%" height="160%">
+      <feDropShadow dx="0" dy="10" stdDeviation="4.5" flood-color="#17202a" flood-opacity=".2"/>
+    </filter>
+    <linearGradient id="shine" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#fff" stop-opacity=".65"/>
+      <stop offset=".5" stop-color="#fff" stop-opacity=".16"/>
+      <stop offset="1" stop-color="#17202a" stop-opacity=".08"/>
+    </linearGradient>
+    <radialGradient id="faceGlow" cx=".36" cy=".28" r=".78">
+      <stop offset="0" stop-color="#fff6df" stop-opacity=".58"/>
+      <stop offset=".58" stop-color="#fff" stop-opacity=".08"/>
+      <stop offset="1" stop-color="#6d432f" stop-opacity=".12"/>
+    </radialGradient>
+    <linearGradient id="tailoredShade" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#fff" stop-opacity=".32"/>
+      <stop offset=".6" stop-color="#fff" stop-opacity=".05"/>
+      <stop offset="1" stop-color="#17202a" stop-opacity=".18"/>
+    </linearGradient>
+  </defs>
+  <g filter="url(#softShadow)" stroke="#25313c" stroke-width="4.8" stroke-linecap="round" stroke-linejoin="round">
+    <ellipse cx="111" cy="203" rx="66" ry="10" fill="#17202a" opacity=".13" stroke="none"/><g transform="rotate(0 112 126)">
+      <path d="M94 154 C91 168 88 181 86 195" stroke="#26384f" stroke-width="13"/>
+    <path d="M123 154 C126 168 129 181 132 195" stroke="#26384f" stroke-width="13"/>
+    <path d="M73 196 C82 192 92 192 101 197 L96 204 H73 Z" fill="#25313c"/>
+    <path d="M120 196 C130 192 140 192 149 197 L144 204 H120 Z" fill="#25313c"/>
+      <path d="M78 116 C83 93 137 92 144 116 L136 160 C127 175 94 175 84 160 Z" fill="#26384f"/>
+      <path d="M79 116 C89 105 100 101 111 101 C123 101 135 105 144 116 L136 160 C127 175 94 175 84 160 Z" fill="url(#tailoredShade)" opacity=".42"/>
+      <path d="M91 116 H129 L126 160 H95 Z" fill="#fff6dc" stroke-width="4"/>
+      <path d="M92 117 L106 131 L96 149 M128 117 L116 132 L125 149" fill="none" stroke="#fff6dc" stroke-width="3" opacity=".75"/>
+      <path d="M104 124 L116 124 L125 163 L109 177 L96 164 Z" fill="#ffd764"/>
+       <path d="M103 124 L118 124 L113 137 Z" fill="#e85f4a"/>
+      <path d="M84 125 C75 132 66 138 58 142" stroke="#fff6dc" stroke-width="12"/>
+    <path d="M136 124 C146 130 155 136 163 140" stroke="#fff6dc" stroke-width="12"/>
+    <circle cx="58" cy="142" r="8" fill="#f4bd82"/><circle cx="163" cy="140" r="8" fill="#f4bd82"/>
+      <g transform="rotate(-8 151 91)">
+    <path d="M151 91 H179 L175 128 H156 Z" fill="#fff6dc"/>
+    <path d="M155 102 H176 L174 118 H157 Z" fill="#f2a849" stroke-width="4"/>
+    <path d="M156 86 H175" stroke="#25313c" stroke-width="6"/>
+  </g>
+    </g>
+    <g transform="rotate(0 110 83)">
+      <ellipse cx="70" cy="85" rx="6" ry="9" fill="#f4bd82"/>
+      <ellipse cx="150" cy="85" rx="6" ry="9" fill="#f4bd82"/>
+      <ellipse cx="110" cy="84" rx="39" ry="42" fill="#f4bd82"/>
+      <ellipse cx="110" cy="84" rx="39" ry="42" fill="url(#faceGlow)" opacity=".84"/>
+      <path d="M66 70 C71 41 110 35 149 56 C129 51 92 64 75 86 Z" fill="#5f6470"/>
+       <path d="M78 61 C95 49 121 47 143 56" fill="none" stroke="#fff" stroke-width="2.8" opacity=".16"/>
+       <path d="M92 48 C88 38 85 33 82 29 M109 45 C111 37 112 31 114 26 M127 50 C134 43 139 39 145 34" fill="none" stroke="#5f6470" stroke-width="5.4"/>
+      <path d="M80 84 Q90 79 100 84 M122 84 Q132 79 142 84" fill="none" stroke="#25313c" stroke-width="4.8"/>
+    <path d="M77 72 Q90 68 102 73 M119 73 Q132 68 145 72" fill="none" stroke="#25313c" stroke-width="3.5" opacity=".66"/>
+      <path d="M96 114 Q110 119 125 114" fill="none" stroke="#25313c" stroke-width="4"/>
+      <path d="M108 91 L102 103 L116 104" fill="none" stroke="#25313c" stroke-width="3.6" opacity=".74"/>
+      <circle cx="81" cy="101" r="5" fill="#e85f4a" opacity=".16" stroke="none"/>
+      <circle cx="139" cy="101" r="5" fill="#e85f4a" opacity=".16" stroke="none"/>
+      
+    </g>
+  </g>
+</svg>
