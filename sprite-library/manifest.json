@@ -1,9 +1,12 @@
 {
   "summary": {
-    "date": "2026-10-22",
+    "date": "2026-10-24",
+    "compiledDate": "2026-10-22",
+    "designRevision": "2026-10-24",
+    "brandReference": "brand-reference/jellykid-canonical-design-2026-10-24.jpg",
     "assetCount": 256,
     "currentCount": 98,
-    "transparentCount": 212,
+    "transparentCount": 211,
     "games": 8,
     "contactSheets": [
       {
@@ -94,11 +97,13 @@
       "height": 1254,
       "transparent": true,
       "frames": 1,
-      "notes": "",
+      "notes": "Jellykid redesigned October 24, 2026 using the new canonical fit-ish shoulders/arms and soft-midsection reference; original pose and scene retained.",
       "source": "assets/jellykid-mascot.png",
       "derived": false,
-      "source_sha256": "a2bc9a21d0b4d2b02faaec67780469f803255cbe1e81c2ac5f42481b4c09a9f0",
-      "sha256": "a2bc9a21d0b4d2b02faaec67780469f803255cbe1e81c2ac5f42481b4c09a9f0"
+      "source_sha256": "f6bcea032981aaba8c35b2e1f5a63ed217575eacd0cb46dd8ea534b9dd5414cd",
+      "sha256": "f6bcea032981aaba8c35b2e1f5a63ed217575eacd0cb46dd8ea534b9dd5414cd",
+      "designRevision": "2026-10-24",
+      "provenance": "imagegen edit of existing artwork using user-supplied canonical reference"
     },
     {
       "id": "JK002",
@@ -113,11 +118,13 @@
       "height": 1254,
       "transparent": true,
       "frames": 1,
-      "notes": "",
+      "notes": "Jellykid redesigned October 24, 2026 using the new canonical fit-ish shoulders/arms and soft-midsection reference; original pose and scene retained.",
       "source": "beat-lab/mascot/jellykid_idle.png",
       "derived": false,
-      "source_sha256": "b17a643ca0428ac78475d2891f084413bc980241083558a92f98eb626a21b27b",
-      "sha256": "b17a643ca0428ac78475d2891f084413bc980241083558a92f98eb626a21b27b"
+      "source_sha256": "bcbe178e3689f52f32b22ed55ce1ca1df67d41e6b082a2c0614479d5920eeefb",
+      "sha256": "bcbe178e3689f52f32b22ed55ce1ca1df67d41e6b082a2c0614479d5920eeefb",
+      "designRevision": "2026-10-24",
+      "provenance": "imagegen edit of existing artwork using user-supplied canonical reference"
     },
     {
       "id": "JK003",
@@ -132,11 +139,13 @@
       "height": 1254,
       "transparent": true,
       "frames": 1,
-      "notes": "",
+      "notes": "Jellykid redesigned October 24, 2026 using the new canonical fit-ish shoulders/arms and soft-midsection reference; original pose and scene retained.",
       "source": "beat-lab/mascot/jellykid_vibing.png",
       "derived": false,
-      "source_sha256": "c2899a028ca16b97a04b7926876ca075a42043209803153c173a1de715584c31",
-      "sha256": "c2899a028ca16b97a04b7926876ca075a42043209803153c173a1de715584c31"
+      "source_sha256": "a142b358522f5aaaa0c81f15d660522f408495706f001edfe9933e7a23c3930e",
+      "sha256": "a142b358522f5aaaa0c81f15d660522f408495706f001edfe9933e7a23c3930e",
+      "designRevision": "2026-10-24",
+      "provenance": "imagegen edit of existing artwork using user-supplied canonical reference"
     },
     {
       "id": "JK004",
@@ -151,11 +160,13 @@
       "height": 1254,
       "transparent": true,
       "frames": 1,
-      "notes": "",
+      "notes": "Jellykid redesigned October 24, 2026 using the new canonical fit-ish shoulders/arms and soft-midsection reference; original pose and scene retained.",
       "source": "beat-lab/mascot/jellykid_hyped.png",
       "derived": false,
-      "source_sha256": "f2afabe3ddee9be29a11ecd469305abe265ac6f714980d863e8b73c20fa31ada",
-      "sha256": "f2afabe3ddee9be29a11ecd469305abe265ac6f714980d863e8b73c20fa31ada"
+      "source_sha256": "cc7691425e6cbd3c251a6be5ca9eb27451f21c7ba813a1d480c9cfbf20cbd40d",
+      "sha256": "cc7691425e6cbd3c251a6be5ca9eb27451f21c7ba813a1d480c9cfbf20cbd40d",
+      "designRevision": "2026-10-24",
+      "provenance": "imagegen edit of existing artwork using user-supplied canonical reference"
     },
     {
       "id": "JK005",
@@ -170,11 +181,13 @@
       "height": 1254,
       "transparent": true,
       "frames": 1,
-      "notes": "",
+      "notes": "Jellykid redesigned October 24, 2026 using the new canonical fit-ish shoulders/arms and soft-midsection reference; original pose and scene retained.",
       "source": "beat-lab/mascot/jellykid_rocking_out.png",
       "derived": false,
-      "source_sha256": "05a3827600147c803774ce52955aefa1756141141d47c6cde62badb579aa090f",
-      "sha256": "05a3827600147c803774ce52955aefa1756141141d47c6cde62badb579aa090f"
+      "source_sha256": "c0ed2307ef67c268f4fb99548fc0593c3cbdfb1cd3e82b0222cbeccae1a0baa8",
+      "sha256": "c0ed2307ef67c268f4fb99548fc0593c3cbdfb1cd3e82b0222cbeccae1a0baa8",
+      "designRevision": "2026-10-24",
+      "provenance": "imagegen edit of existing artwork using user-supplied canonical reference"
     },
     {
       "id": "JK006",
@@ -189,11 +202,13 @@
       "height": 1254,
       "transparent": true,
       "frames": 1,
-      "notes": "",
+      "notes": "Jellykid redesigned October 24, 2026 using the new canonical fit-ish shoulders/arms and soft-midsection reference; original pose and scene retained.",
       "source": "beat-lab/mascot/jellykid_bummed.png",
       "derived": false,
-      "source_sha256": "d9c4f90cb2ff1ae51663658a67e771c0e13b8f145d6bce2a98dbe2854537dcda",
-      "sha256": "d9c4f90cb2ff1ae51663658a67e771c0e13b8f145d6bce2a98dbe2854537dcda"
+      "source_sha256": "e0456df676e53b8a857ba2cc6f97b1d54a5b02eb657aab41f58948884d919dcb",
+      "sha256": "e0456df676e53b8a857ba2cc6f97b1d54a5b02eb657aab41f58948884d919dcb",
+      "designRevision": "2026-10-24",
+      "provenance": "imagegen edit of existing artwork using user-supplied canonical reference"
     },
     {
       "id": "JK007",
@@ -208,11 +223,13 @@
       "height": 1254,
       "transparent": true,
       "frames": 1,
-      "notes": "",
+      "notes": "Jellykid redesigned October 24, 2026 using the new canonical fit-ish shoulders/arms and soft-midsection reference; original pose and scene retained.",
       "source": "beat-lab/mascot/jellykid_shocked_miss.png",
       "derived": false,
-      "source_sha256": "a5d12a8903bd442bddb7100686546e74cc9adfbc10466252e1f209407fe4c86b",
-      "sha256": "a5d12a8903bd442bddb7100686546e74cc9adfbc10466252e1f209407fe4c86b"
+      "source_sha256": "4025e655830b1aeab14ec0b9a5440a3004d920102eef81f2f1b232fade30cdbc",
+      "sha256": "4025e655830b1aeab14ec0b9a5440a3004d920102eef81f2f1b232fade30cdbc",
+      "designRevision": "2026-10-24",
+      "provenance": "imagegen edit of existing artwork using user-supplied canonical reference"
     },
     {
       "id": "JK008",
@@ -227,11 +244,13 @@
       "height": 1254,
       "transparent": true,
       "frames": 1,
-      "notes": "",
+      "notes": "Jellykid redesigned October 24, 2026 using the new canonical fit-ish shoulders/arms and soft-midsection reference; original pose and scene retained.",
       "source": "beat-lab/mascot/jellykid_celebrating.png",
       "derived": false,
-      "source_sha256": "34d893648deb71874a3bccef7481f0d30ad4f520439d66ff8ecc77bc032fa8e6",
-      "sha256": "34d893648deb71874a3bccef7481f0d30ad4f520439d66ff8ecc77bc032fa8e6"
+      "source_sha256": "6830d50d710de988b7449f2afbfec08cf736313a5650353bc342d0c17cd9963a",
+      "sha256": "6830d50d710de988b7449f2afbfec08cf736313a5650353bc342d0c17cd9963a",
+      "designRevision": "2026-10-24",
+      "provenance": "imagegen edit of existing artwork using user-supplied canonical reference"
     },
     {
       "id": "JK009",
@@ -246,11 +265,13 @@
       "height": 1536,
       "transparent": true,
       "frames": 1,
-      "notes": "Current game artwork. Summit Quest is temporarily hidden from the homepage.",
+      "notes": "Current game artwork. Summit Quest is temporarily hidden from the homepage. Jellykid redesigned October 24, 2026 using the new canonical fit-ish shoulders/arms and soft-midsection reference; original pose and scene retained.",
       "source": "summit-quest/assets/jellykid-explorer.png",
       "derived": false,
-      "source_sha256": "fecdbb00714a8292fdc93c02177177ac8f458d3c69bb6643c7cbf485e536943e",
-      "sha256": "fecdbb00714a8292fdc93c02177177ac8f458d3c69bb6643c7cbf485e536943e"
+      "source_sha256": "37b13ce0bf57716f4bd5e6d9584d3dff51b4ac0a4fcdee3fa870866848a6812e",
+      "sha256": "37b13ce0bf57716f4bd5e6d9584d3dff51b4ac0a4fcdee3fa870866848a6812e",
+      "designRevision": "2026-10-24",
+      "provenance": "imagegen edit of existing artwork using user-supplied canonical reference"
     },
     {
       "id": "JK010",
@@ -265,11 +286,13 @@
       "height": 1536,
       "transparent": true,
       "frames": 1,
-      "notes": "Current game artwork. Summit Quest is temporarily hidden from the homepage.",
+      "notes": "Current game artwork. Summit Quest is temporarily hidden from the homepage. Jellykid redesigned October 24, 2026 using the new canonical fit-ish shoulders/arms and soft-midsection reference; original pose and scene retained.",
       "source": "summit-quest/assets/jellykid-ready.png",
       "derived": false,
-      "source_sha256": "e633a977c9c1ec4cebcdb01220ea670b3046cabb5f3789348881fd1ad273a057",
-      "sha256": "e633a977c9c1ec4cebcdb01220ea670b3046cabb5f3789348881fd1ad273a057"
+      "source_sha256": "4a3f7a06a349ef5e83bb358fec0b605c4099e673a54ad161d618bfd95fdbbd8f",
+      "sha256": "4a3f7a06a349ef5e83bb358fec0b605c4099e673a54ad161d618bfd95fdbbd8f",
+      "designRevision": "2026-10-24",
+      "provenance": "imagegen edit of existing artwork using user-supplied canonical reference"
     },
     {
       "id": "JK011",
@@ -284,11 +307,13 @@
       "height": 1536,
       "transparent": true,
       "frames": 1,
-      "notes": "Current game artwork. Summit Quest is temporarily hidden from the homepage.",
+      "notes": "Current game artwork. Summit Quest is temporarily hidden from the homepage. Jellykid redesigned October 24, 2026 using the new canonical fit-ish shoulders/arms and soft-midsection reference; original pose and scene retained.",
       "source": "summit-quest/assets/jellykid-confused.png",
       "derived": false,
-      "source_sha256": "5dc8e355f8142b60fc91a667826393df199ffff699b2ce5943f466dce6999458",
-      "sha256": "5dc8e355f8142b60fc91a667826393df199ffff699b2ce5943f466dce6999458"
+      "source_sha256": "fe3704cb6f053f3481565c24f3ee5e28c7e1ae7b0d301ab5c4636e9c8474b036",
+      "sha256": "fe3704cb6f053f3481565c24f3ee5e28c7e1ae7b0d301ab5c4636e9c8474b036",
+      "designRevision": "2026-10-24",
+      "provenance": "imagegen edit of existing artwork using user-supplied canonical reference"
     },
     {
       "id": "JK012",
@@ -303,11 +328,13 @@
       "height": 1254,
       "transparent": true,
       "frames": 1,
-      "notes": "",
+      "notes": "Jellykid redesigned October 24, 2026 using the new canonical fit-ish shoulders/arms and soft-midsection reference; original pose and scene retained.",
       "source": "daily-six/assets/doors/daily_door_jellykid_back.png",
       "derived": false,
-      "source_sha256": "01e2e6ab64cdb0596189712b619b988738b7922a00b8b071e86b7ba631122e9d",
-      "sha256": "01e2e6ab64cdb0596189712b619b988738b7922a00b8b071e86b7ba631122e9d"
+      "source_sha256": "d9bd1d88fca5d976c705029638ded0759d3655d65516b729fa204382fb7f7292",
+      "sha256": "d9bd1d88fca5d976c705029638ded0759d3655d65516b729fa204382fb7f7292",
+      "designRevision": "2026-10-24",
+      "provenance": "imagegen edit of existing artwork using user-supplied canonical reference"
     },
     {
       "id": "JK013",
@@ -2165,11 +2192,13 @@
       "height": 1402,
       "transparent": false,
       "frames": 1,
-      "notes": "Current Daily Door reveal scene with original background.",
+      "notes": "Current Daily Door reveal scene with original background. Jellykid redesigned October 24, 2026 using the new canonical fit-ish shoulders/arms and soft-midsection reference; original pose and scene retained.",
       "source": "daily-six/assets/doors/reveals/daily_door_reveal_jellykid_dev.png",
       "derived": false,
-      "source_sha256": "618fa810cd6e1f0dcb042bbdb90151f7b7e227fcf2594ac61344b2106708acee",
-      "sha256": "618fa810cd6e1f0dcb042bbdb90151f7b7e227fcf2594ac61344b2106708acee"
+      "source_sha256": "6bc62aee48715c2d801b1c62c4bf5e342f01272eb9dcba1107b58be12139251f",
+      "sha256": "6bc62aee48715c2d801b1c62c4bf5e342f01272eb9dcba1107b58be12139251f",
+      "designRevision": "2026-10-24",
+      "provenance": "imagegen edit of existing artwork using user-supplied canonical reference"
     },
     {
       "id": "JK111",
@@ -2640,11 +2669,13 @@
       "height": 840,
       "transparent": true,
       "frames": 1,
-      "notes": "Preserved Jellykid deck; currently not selectable. Original framed artwork with baked background.",
+      "notes": "Preserved Jellykid deck; currently not selectable. Original framed artwork with baked background. Jellykid redesigned October 24, 2026 using the new canonical fit-ish shoulders/arms and soft-midsection reference; original pose and scene retained.",
       "source": "lane-clash/assets/cards/jelly-card-01.png",
       "derived": false,
-      "source_sha256": "29a08f83703baaab0aa9e7ead70c9c0962758288cef1bd3b73048659e42e71bc",
-      "sha256": "29a08f83703baaab0aa9e7ead70c9c0962758288cef1bd3b73048659e42e71bc"
+      "source_sha256": "e6870b6b016729d540ba4b5bf28eedefdb2475675140d01157ec3d82af51881b",
+      "sha256": "e6870b6b016729d540ba4b5bf28eedefdb2475675140d01157ec3d82af51881b",
+      "designRevision": "2026-10-24",
+      "provenance": "imagegen edit of existing artwork using user-supplied canonical reference"
     },
     {
       "id": "JK136",
@@ -2659,11 +2690,13 @@
       "height": 840,
       "transparent": true,
       "frames": 1,
-      "notes": "Preserved Jellykid deck; currently not selectable. Original framed artwork with baked background.",
+      "notes": "Preserved Jellykid deck; currently not selectable. Original framed artwork with baked background. Jellykid redesigned October 24, 2026 using the new canonical fit-ish shoulders/arms and soft-midsection reference; original pose and scene retained.",
       "source": "lane-clash/assets/cards/jelly-card-02.png",
       "derived": false,
-      "source_sha256": "8da88f2a6e37900e9a0a0f1438975b5e9f33fd267cfa059b67879247c7dc93f3",
-      "sha256": "8da88f2a6e37900e9a0a0f1438975b5e9f33fd267cfa059b67879247c7dc93f3"
+      "source_sha256": "a5e9b328545d54df82da6c8ee591a67c77210487aefbcd93f1d5bdc89f33e240",
+      "sha256": "a5e9b328545d54df82da6c8ee591a67c77210487aefbcd93f1d5bdc89f33e240",
+      "designRevision": "2026-10-24",
+      "provenance": "imagegen edit of existing artwork using user-supplied canonical reference"
     },
     {
       "id": "JK137",
@@ -2678,11 +2711,13 @@
       "height": 840,
       "transparent": true,
       "frames": 1,
-      "notes": "Preserved Jellykid deck; currently not selectable. Original framed artwork with baked background.",
+      "notes": "Preserved Jellykid deck; currently not selectable. Original framed artwork with baked background. Jellykid redesigned October 24, 2026 using the new canonical fit-ish shoulders/arms and soft-midsection reference; original pose and scene retained.",
       "source": "lane-clash/assets/cards/jelly-card-03.png",
       "derived": false,
-      "source_sha256": "94f38b686f4ba96b5d8d906cd29063665309e2f4d8d809d439c24307183a487f",
-      "sha256": "94f38b686f4ba96b5d8d906cd29063665309e2f4d8d809d439c24307183a487f"
+      "source_sha256": "a0360811354d860d75fd1e1d9f5adbc9b090a9caa679612d9e5535e3dc033719",
+      "sha256": "a0360811354d860d75fd1e1d9f5adbc9b090a9caa679612d9e5535e3dc033719",
+      "designRevision": "2026-10-24",
+      "provenance": "imagegen edit of existing artwork using user-supplied canonical reference"
     },
     {
       "id": "JK138",
@@ -2697,11 +2732,13 @@
       "height": 840,
       "transparent": true,
       "frames": 1,
-      "notes": "Preserved Jellykid deck; currently not selectable. Original framed artwork with baked background.",
+      "notes": "Preserved Jellykid deck; currently not selectable. Original framed artwork with baked background. Jellykid redesigned October 24, 2026 using the new canonical fit-ish shoulders/arms and soft-midsection reference; original pose and scene retained.",
       "source": "lane-clash/assets/cards/jelly-card-04.png",
       "derived": false,
-      "source_sha256": "2e47a41d22a93ebb94a5d456eaf2d53ccab284de5845da968795bec9094b45f5",
-      "sha256": "2e47a41d22a93ebb94a5d456eaf2d53ccab284de5845da968795bec9094b45f5"
+      "source_sha256": "6af590da118d1ef2a23f7ee6eef074fc5334a31ba231fddb3e1695d08fc15210",
+      "sha256": "6af590da118d1ef2a23f7ee6eef074fc5334a31ba231fddb3e1695d08fc15210",
+      "designRevision": "2026-10-24",
+      "provenance": "imagegen edit of existing artwork using user-supplied canonical reference"
     },
     {
       "id": "JK139",
@@ -2716,11 +2753,13 @@
       "height": 840,
       "transparent": true,
       "frames": 1,
-      "notes": "Preserved Jellykid deck; currently not selectable. Original framed artwork with baked background.",
+      "notes": "Preserved Jellykid deck; currently not selectable. Original framed artwork with baked background. Jellykid redesigned October 24, 2026 using the new canonical fit-ish shoulders/arms and soft-midsection reference; original pose and scene retained.",
       "source": "lane-clash/assets/cards/jelly-card-05.png",
       "derived": false,
-      "source_sha256": "0eb8814d68348339a4c8f362f554ab5185980ba1da175894f0a6180fa9285f47",
-      "sha256": "0eb8814d68348339a4c8f362f554ab5185980ba1da175894f0a6180fa9285f47"
+      "source_sha256": "dfc0d4d05180f0bae66db791d7f7c915a4a76ee2482b6176a710b5da5c365d8a",
+      "sha256": "dfc0d4d05180f0bae66db791d7f7c915a4a76ee2482b6176a710b5da5c365d8a",
+      "designRevision": "2026-10-24",
+      "provenance": "imagegen edit of existing artwork using user-supplied canonical reference"
     },
     {
       "id": "JK140",
@@ -2735,11 +2774,13 @@
       "height": 840,
       "transparent": true,
       "frames": 1,
-      "notes": "Preserved Jellykid deck; currently not selectable. Original framed artwork with baked background.",
+      "notes": "Preserved Jellykid deck; currently not selectable. Original framed artwork with baked background. Jellykid redesigned October 24, 2026 using the new canonical fit-ish shoulders/arms and soft-midsection reference; original pose and scene retained.",
       "source": "lane-clash/assets/cards/jelly-card-06.png",
       "derived": false,
-      "source_sha256": "9fbfbb392e06db0060600c3b21bbebb897399d458f892d2de38eef29da3703e9",
-      "sha256": "9fbfbb392e06db0060600c3b21bbebb897399d458f892d2de38eef29da3703e9"
+      "source_sha256": "e9d8d67b83d6181cb4b09d59b704f0cf9acb0634331a9975c9c4689d568ec0d4",
+      "sha256": "e9d8d67b83d6181cb4b09d59b704f0cf9acb0634331a9975c9c4689d568ec0d4",
+      "designRevision": "2026-10-24",
+      "provenance": "imagegen edit of existing artwork using user-supplied canonical reference"
     },
     {
       "id": "JK141",
@@ -2754,11 +2795,13 @@
       "height": 840,
       "transparent": true,
       "frames": 1,
-      "notes": "Preserved Jellykid deck; currently not selectable. Original framed artwork with baked background.",
+      "notes": "Preserved Jellykid deck; currently not selectable. Original framed artwork with baked background. Jellykid redesigned October 24, 2026 using the new canonical fit-ish shoulders/arms and soft-midsection reference; original pose and scene retained.",
       "source": "lane-clash/assets/cards/jelly-card-07.png",
       "derived": false,
-      "source_sha256": "eeea5e421c705748f377766afd91b9e4505e261ebf57b10c0f211950a16f99db",
-      "sha256": "eeea5e421c705748f377766afd91b9e4505e261ebf57b10c0f211950a16f99db"
+      "source_sha256": "aba595ec5e6a7cd16866982ce9480a74be03caf6825bc7081ec5e73364ca58fb",
+      "sha256": "aba595ec5e6a7cd16866982ce9480a74be03caf6825bc7081ec5e73364ca58fb",
+      "designRevision": "2026-10-24",
+      "provenance": "imagegen edit of existing artwork using user-supplied canonical reference"
     },
     {
       "id": "JK142",
@@ -2773,11 +2816,13 @@
       "height": 840,
       "transparent": true,
       "frames": 1,
-      "notes": "Preserved Jellykid deck; currently not selectable. Original framed artwork with baked background.",
+      "notes": "Preserved Jellykid deck; currently not selectable. Original framed artwork with baked background. Jellykid redesigned October 24, 2026 using the new canonical fit-ish shoulders/arms and soft-midsection reference; original pose and scene retained.",
       "source": "lane-clash/assets/cards/jelly-card-08.png",
       "derived": false,
-      "source_sha256": "bf6306538e4f7f8e1d13780ecba0734088258d0586e298d600ad9c0f01c54ec4",
-      "sha256": "bf6306538e4f7f8e1d13780ecba0734088258d0586e298d600ad9c0f01c54ec4"
+      "source_sha256": "0b19f0854ca6fd820e57a496e63df13bf60fbdf8c585c3363a0183225a594794",
+      "sha256": "0b19f0854ca6fd820e57a496e63df13bf60fbdf8c585c3363a0183225a594794",
+      "designRevision": "2026-10-24",
+      "provenance": "imagegen edit of existing artwork using user-supplied canonical reference"
     },
     {
       "id": "JK143",
@@ -2792,11 +2837,13 @@
       "height": 840,
       "transparent": true,
       "frames": 1,
-      "notes": "Preserved Jellykid deck; currently not selectable. Original framed artwork with baked background.",
+      "notes": "Preserved Jellykid deck; currently not selectable. Original framed artwork with baked background. Jellykid redesigned October 24, 2026 using the new canonical fit-ish shoulders/arms and soft-midsection reference; original pose and scene retained.",
       "source": "lane-clash/assets/cards/jelly-card-09.png",
       "derived": false,
-      "source_sha256": "71080786f95df9071b711c846a783017a3cca1247d371236646573ecdc49bd34",
-      "sha256": "71080786f95df9071b711c846a783017a3cca1247d371236646573ecdc49bd34"
+      "source_sha256": "2ba49993eacf4c1d129a86c87f5c78c4aa4376a0511e1c3403e2e693079e6c2d",
+      "sha256": "2ba49993eacf4c1d129a86c87f5c78c4aa4376a0511e1c3403e2e693079e6c2d",
+      "designRevision": "2026-10-24",
+      "provenance": "imagegen edit of existing artwork using user-supplied canonical reference"
     },
     {
       "id": "JK144",
@@ -2811,11 +2858,13 @@
       "height": 840,
       "transparent": true,
       "frames": 1,
-      "notes": "Preserved Jellykid deck; currently not selectable. Original framed artwork with baked background.",
+      "notes": "Preserved Jellykid deck; currently not selectable. Original framed artwork with baked background. Jellykid redesigned October 24, 2026 using the new canonical fit-ish shoulders/arms and soft-midsection reference; original pose and scene retained.",
       "source": "lane-clash/assets/cards/jelly-card-10.png",
       "derived": false,
-      "source_sha256": "64d0b193b0c75c78211e882740c5e0e28e9aca8e2d3e4023fa4332dab4dbfdb5",
-      "sha256": "64d0b193b0c75c78211e882740c5e0e28e9aca8e2d3e4023fa4332dab4dbfdb5"
+      "source_sha256": "26df2791f721150297fcc7f1244c78386655e1cc8e6e1d3931992c0d7c2d8d1a",
+      "sha256": "26df2791f721150297fcc7f1244c78386655e1cc8e6e1d3931992c0d7c2d8d1a",
+      "designRevision": "2026-10-24",
+      "provenance": "imagegen edit of existing artwork using user-supplied canonical reference"
     },
     {
       "id": "JK145",
@@ -2830,11 +2879,13 @@
       "height": 840,
       "transparent": false,
       "frames": 1,
-      "notes": "Preserved Jellykid deck; currently not selectable. Original framed artwork with baked background.",
+      "notes": "Preserved Jellykid deck; currently not selectable. Original framed artwork with baked background. Jellykid redesigned October 24, 2026 using the new canonical fit-ish shoulders/arms and soft-midsection reference; original pose and scene retained.",
       "source": "lane-clash/assets/cards/jelly-card-back.png",
       "derived": false,
-      "source_sha256": "b7dfeaab1f8f631ab55f01c98686235166df3db028d6459d0a0e43e56655397a",
-      "sha256": "b7dfeaab1f8f631ab55f01c98686235166df3db028d6459d0a0e43e56655397a"
+      "source_sha256": "5f36e4eb798f1a1a888c0332666824be2a64a2de73ce374cab697e64e9743d19",
+      "sha256": "5f36e4eb798f1a1a888c0332666824be2a64a2de73ce374cab697e64e9743d19",
+      "designRevision": "2026-10-24",
+      "provenance": "imagegen edit of existing artwork using user-supplied canonical reference"
     },
     {
       "id": "JK146",
@@ -2849,11 +2900,13 @@
       "height": 840,
       "transparent": false,
       "frames": 1,
-      "notes": "Earlier AI deck/fallback illustration; not the current selectable faction decks. Original framed artwork with baked background.",
+      "notes": "Earlier AI deck/fallback illustration; not the current selectable faction decks. Original framed artwork with baked background. Jellykid redesigned October 24, 2026 using the new canonical fit-ish shoulders/arms and soft-midsection reference; original pose and scene retained.",
       "source": "lane-clash/assets/cards/ai/jelly-card-01.png",
       "derived": false,
-      "source_sha256": "80eebdbf1d35f1b14ffd8b02a8b6ee1efd6fedb81f1a70249db8c7ae6e4191bc",
-      "sha256": "80eebdbf1d35f1b14ffd8b02a8b6ee1efd6fedb81f1a70249db8c7ae6e4191bc"
+      "source_sha256": "c9880cba32c40479e95b6f2e5c3bbd563d4296675a995702aedd97f08a616716",
+      "sha256": "c9880cba32c40479e95b6f2e5c3bbd563d4296675a995702aedd97f08a616716",
+      "designRevision": "2026-10-24",
+      "provenance": "imagegen edit of existing artwork using user-supplied canonical reference"
     },
     {
       "id": "JK147",
@@ -2868,11 +2921,13 @@
       "height": 840,
       "transparent": false,
       "frames": 1,
-      "notes": "Earlier AI deck/fallback illustration; not the current selectable faction decks. Original framed artwork with baked background.",
+      "notes": "Earlier AI deck/fallback illustration; not the current selectable faction decks. Original framed artwork with baked background. Jellykid redesigned October 24, 2026 using the new canonical fit-ish shoulders/arms and soft-midsection reference; original pose and scene retained.",
       "source": "lane-clash/assets/cards/ai/jelly-card-02.png",
       "derived": false,
-      "source_sha256": "eed43e4d8f4762fc277014dc74aa01b229e2c0b19444221f6615df494233650c",
-      "sha256": "eed43e4d8f4762fc277014dc74aa01b229e2c0b19444221f6615df494233650c"
+      "source_sha256": "f966aeb9c9c7745ad97d68bbe51dab3c81c04c40b504a0075d6b45dc71d89e3e",
+      "sha256": "f966aeb9c9c7745ad97d68bbe51dab3c81c04c40b504a0075d6b45dc71d89e3e",
+      "designRevision": "2026-10-24",
+      "provenance": "imagegen edit of existing artwork using user-supplied canonical reference"
     },
     {
       "id": "JK148",
@@ -2887,11 +2942,13 @@
       "height": 840,
       "transparent": false,
       "frames": 1,
-      "notes": "Earlier AI deck/fallback illustration; not the current selectable faction decks. Original framed artwork with baked background.",
+      "notes": "Earlier AI deck/fallback illustration; not the current selectable faction decks. Original framed artwork with baked background. Jellykid redesigned October 24, 2026 using the new canonical fit-ish shoulders/arms and soft-midsection reference; original pose and scene retained.",
       "source": "lane-clash/assets/cards/ai/jelly-card-03.png",
       "derived": false,
-      "source_sha256": "a7c1bd8f83ffca243a3d961ebd0fdfd787fbc92864220dbcd3445a9d95428f53",
-      "sha256": "a7c1bd8f83ffca243a3d961ebd0fdfd787fbc92864220dbcd3445a9d95428f53"
+      "source_sha256": "08950f73ee8d0df42dda223b35e1601f30872efa78bc1e8394f7dab613900397",
+      "sha256": "08950f73ee8d0df42dda223b35e1601f30872efa78bc1e8394f7dab613900397",
+      "designRevision": "2026-10-24",
+      "provenance": "imagegen edit of existing artwork using user-supplied canonical reference"
     },
     {
       "id": "JK149",
@@ -2906,11 +2963,13 @@
       "height": 840,
       "transparent": false,
       "frames": 1,
-      "notes": "Earlier AI deck/fallback illustration; not the current selectable faction decks. Original framed artwork with baked background.",
+      "notes": "Earlier AI deck/fallback illustration; not the current selectable faction decks. Original framed artwork with baked background. Jellykid redesigned October 24, 2026 using the new canonical fit-ish shoulders/arms and soft-midsection reference; original pose and scene retained.",
       "source": "lane-clash/assets/cards/ai/jelly-card-04.png",
       "derived": false,
-      "source_sha256": "b105a9f4c2813a7085b05a07cf12d9c2b20a55cf94b2641b78dbcc7b718f643a",
-      "sha256": "b105a9f4c2813a7085b05a07cf12d9c2b20a55cf94b2641b78dbcc7b718f643a"
+      "source_sha256": "a1b867a6ba8b2d4026c2eaf21dd635a38f004e5923dfde27a802c05d4809677d",
+      "sha256": "a1b867a6ba8b2d4026c2eaf21dd635a38f004e5923dfde27a802c05d4809677d",
+      "designRevision": "2026-10-24",
+      "provenance": "imagegen edit of existing artwork using user-supplied canonical reference"
     },
     {
       "id": "JK150",
@@ -2925,11 +2984,13 @@
       "height": 840,
       "transparent": false,
       "frames": 1,
-      "notes": "Earlier AI deck/fallback illustration; not the current selectable faction decks. Original framed artwork with baked background.",
+      "notes": "Earlier AI deck/fallback illustration; not the current selectable faction decks. Original framed artwork with baked background. Jellykid redesigned October 24, 2026 using the new canonical fit-ish shoulders/arms and soft-midsection reference; original pose and scene retained.",
       "source": "lane-clash/assets/cards/ai/jelly-card-05.png",
       "derived": false,
-      "source_sha256": "6ad2ae528f272f7c35855e22081a650167ac67a87737538b36340b1254650ae5",
-      "sha256": "6ad2ae528f272f7c35855e22081a650167ac67a87737538b36340b1254650ae5"
+      "source_sha256": "eedd5a8f9dac9e8669366d12eda0802772931cda60c627465896820ca30d7eae",
+      "sha256": "eedd5a8f9dac9e8669366d12eda0802772931cda60c627465896820ca30d7eae",
+      "designRevision": "2026-10-24",
+      "provenance": "imagegen edit of existing artwork using user-supplied canonical reference"
     },
     {
       "id": "JK151",
@@ -2944,11 +3005,13 @@
       "height": 840,
       "transparent": false,
       "frames": 1,
-      "notes": "Earlier AI deck/fallback illustration; not the current selectable faction decks. Original framed artwork with baked background.",
+      "notes": "Earlier AI deck/fallback illustration; not the current selectable faction decks. Original framed artwork with baked background. Jellykid redesigned October 24, 2026 using the new canonical fit-ish shoulders/arms and soft-midsection reference; original pose and scene retained.",
       "source": "lane-clash/assets/cards/ai/jelly-card-06.png",
       "derived": false,
-      "source_sha256": "6a1293b577c91ac7a4ed559d75bf626c58d0f6e66aaf7f1762007667342d097c",
-      "sha256": "6a1293b577c91ac7a4ed559d75bf626c58d0f6e66aaf7f1762007667342d097c"
+      "source_sha256": "ed397651fd6b97339c9973d1610a786804e8fccab341fca3e7711cad649a0ef2",
+      "sha256": "ed397651fd6b97339c9973d1610a786804e8fccab341fca3e7711cad649a0ef2",
+      "designRevision": "2026-10-24",
+      "provenance": "imagegen edit of existing artwork using user-supplied canonical reference"
     },
     {
       "id": "JK152",
@@ -2963,11 +3026,13 @@
       "height": 840,
       "transparent": false,
       "frames": 1,
-      "notes": "Earlier AI deck/fallback illustration; not the current selectable faction decks. Original framed artwork with baked background.",
+      "notes": "Earlier AI deck/fallback illustration; not the current selectable faction decks. Original framed artwork with baked background. Jellykid redesigned October 24, 2026 using the new canonical fit-ish shoulders/arms and soft-midsection reference; original pose and scene retained.",
       "source": "lane-clash/assets/cards/ai/jelly-card-07.png",
       "derived": false,
-      "source_sha256": "aca90feed073d94432e6fa7a96c807a2be3f30d4e45044c3179335c3d2baf746",
-      "sha256": "aca90feed073d94432e6fa7a96c807a2be3f30d4e45044c3179335c3d2baf746"
+      "source_sha256": "e4fe48ff8b2097ce6fcf1e588aff721308fd9fc70465ad92e2bdb468ee330a28",
+      "sha256": "e4fe48ff8b2097ce6fcf1e588aff721308fd9fc70465ad92e2bdb468ee330a28",
+      "designRevision": "2026-10-24",
+      "provenance": "imagegen edit of existing artwork using user-supplied canonical reference"
     },
     {
       "id": "JK153",
@@ -2982,11 +3047,13 @@
       "height": 840,
       "transparent": false,
       "frames": 1,
-      "notes": "Earlier AI deck/fallback illustration; not the current selectable faction decks. Original framed artwork with baked background.",
+      "notes": "Earlier AI deck/fallback illustration; not the current selectable faction decks. Original framed artwork with baked background. Jellykid redesigned October 24, 2026 using the new canonical fit-ish shoulders/arms and soft-midsection reference; original pose and scene retained.",
       "source": "lane-clash/assets/cards/ai/jelly-card-08.png",
       "derived": false,
-      "source_sha256": "9a79e2143e3a9a84eaf81511184eee264c20fee36f750f4c2d17b8cf3cfe49b9",
-      "sha256": "9a79e2143e3a9a84eaf81511184eee264c20fee36f750f4c2d17b8cf3cfe49b9"
+      "source_sha256": "1d1517de486772b7d826de9910eaa4e54a6f9ce04ad135912d39789ad1549e00",
+      "sha256": "1d1517de486772b7d826de9910eaa4e54a6f9ce04ad135912d39789ad1549e00",
+      "designRevision": "2026-10-24",
+      "provenance": "imagegen edit of existing artwork using user-supplied canonical reference"
     },
     {
       "id": "JK154",
@@ -3001,11 +3068,13 @@
       "height": 840,
       "transparent": false,
       "frames": 1,
-      "notes": "Earlier AI deck/fallback illustration; not the current selectable faction decks. Original framed artwork with baked background.",
+      "notes": "Earlier AI deck/fallback illustration; not the current selectable faction decks. Original framed artwork with baked background. Jellykid redesigned October 24, 2026 using the new canonical fit-ish shoulders/arms and soft-midsection reference; original pose and scene retained.",
       "source": "lane-clash/assets/cards/ai/jelly-card-09.png",
       "derived": false,
-      "source_sha256": "6c0ea834fbb9e10b053de5edf01bb310674686c2a48c586d92a88df6ca70f3c4",
-      "sha256": "6c0ea834fbb9e10b053de5edf01bb310674686c2a48c586d92a88df6ca70f3c4"
+      "source_sha256": "379aa324819d65e77e688f7e2fc4e26d64c4d994503675de088fd7f0ff44dece",
+      "sha256": "379aa324819d65e77e688f7e2fc4e26d64c4d994503675de088fd7f0ff44dece",
+      "designRevision": "2026-10-24",
+      "provenance": "imagegen edit of existing artwork using user-supplied canonical reference"
     },
     {
       "id": "JK155",
@@ -3020,11 +3089,13 @@
       "height": 840,
       "transparent": false,
       "frames": 1,
-      "notes": "Earlier AI deck/fallback illustration; not the current selectable faction decks. Original framed artwork with baked background.",
+      "notes": "Earlier AI deck/fallback illustration; not the current selectable faction decks. Original framed artwork with baked background. Jellykid redesigned October 24, 2026 using the new canonical fit-ish shoulders/arms and soft-midsection reference; original pose and scene retained.",
       "source": "lane-clash/assets/cards/ai/jelly-card-10.png",
       "derived": false,
-      "source_sha256": "35851e86d58e33a687a269c9d3df2e2fa14f43385f22cc2b7791950c779fd1e9",
-      "sha256": "35851e86d58e33a687a269c9d3df2e2fa14f43385f22cc2b7791950c779fd1e9"
+      "source_sha256": "a23043f3cf5a4c14419cdf54200a9d675e6f7a02dc56d791cdcf07c37949650d",
+      "sha256": "a23043f3cf5a4c14419cdf54200a9d675e6f7a02dc56d791cdcf07c37949650d",
+      "designRevision": "2026-10-24",
+      "provenance": "imagegen edit of existing artwork using user-supplied canonical reference"
     },
     {
       "id": "JK156",
@@ -3039,11 +3110,13 @@
       "height": 840,
       "transparent": false,
       "frames": 1,
-      "notes": "Earlier AI deck/fallback illustration; not the current selectable faction decks. Original framed artwork with baked background.",
+      "notes": "Earlier AI deck/fallback illustration; not the current selectable faction decks. Original framed artwork with baked background. Jellykid redesigned October 24, 2026 using the new canonical fit-ish shoulders/arms and soft-midsection reference; original pose and scene retained.",
       "source": "lane-clash/assets/cards/ai/jelly-card-back.png",
       "derived": false,
-      "source_sha256": "f501e5901858b7fb27a397d1dae9d2b92247ecd20f34a85d39b5224df992e80f",
-      "sha256": "f501e5901858b7fb27a397d1dae9d2b92247ecd20f34a85d39b5224df992e80f"
+      "source_sha256": "77ceee16b30cc84dabbc3e0eed64adbf59906a57eae07237e5602adaa80cbdea",
+      "sha256": "77ceee16b30cc84dabbc3e0eed64adbf59906a57eae07237e5602adaa80cbdea",
+      "designRevision": "2026-10-24",
+      "provenance": "imagegen edit of existing artwork using user-supplied canonical reference"
     },
     {
       "id": "JK157",
@@ -4695,11 +4768,13 @@
       "height": 1024,
       "transparent": false,
       "frames": 1,
-      "notes": "Existing promotional artwork supplied as an extra; complete scene/background is preserved. Some versions are earlier alternates.",
+      "notes": "Existing promotional artwork supplied as an extra; complete scene/background is preserved. Some versions are earlier alternates. Jellykid redesigned October 24, 2026 using the new canonical fit-ish shoulders/arms and soft-midsection reference; original pose and scene retained.",
       "source": "daily-six/assets/daily-six-social.png",
       "derived": false,
-      "source_sha256": "d40afed8e8e7d945a4efab55d2a21d888a6dd9d62a21374eada891e85cd08365",
-      "sha256": "d40afed8e8e7d945a4efab55d2a21d888a6dd9d62a21374eada891e85cd08365"
+      "source_sha256": "63a2a94b0478f8b4286aff73e46ba9f2e6780ef9dbffb747851a8a82d18b0cf0",
+      "sha256": "63a2a94b0478f8b4286aff73e46ba9f2e6780ef9dbffb747851a8a82d18b0cf0",
+      "designRevision": "2026-10-24",
+      "provenance": "imagegen edit of existing artwork using user-supplied canonical reference"
     },
     {
       "id": "JK241",
@@ -4712,13 +4787,15 @@
       "preview": "previews/JK241.webp",
       "width": 1600,
       "height": 900,
-      "transparent": true,
+      "transparent": false,
       "frames": 1,
-      "notes": "Existing promotional artwork supplied as an extra; complete scene/background is preserved. Some versions are earlier alternates.",
+      "notes": "Existing promotional artwork supplied as an extra; complete scene/background is preserved. Some versions are earlier alternates. Jellykid redesigned October 24, 2026 using the new canonical fit-ish shoulders/arms and soft-midsection reference; original pose and scene retained.",
       "source": "lane-clash/assets/menu/jellykid-high-card-havoc-home.png",
       "derived": false,
-      "source_sha256": "4b3c82964c6a5d7c890ff0466c24211b97b3fbe47ed2f5275f3e97a020170d05",
-      "sha256": "4b3c82964c6a5d7c890ff0466c24211b97b3fbe47ed2f5275f3e97a020170d05"
+      "source_sha256": "1164c1727cec0a62ec659137233b3f08a7c9167f3a586375aa6a8d9e3775be09",
+      "sha256": "1164c1727cec0a62ec659137233b3f08a7c9167f3a586375aa6a8d9e3775be09",
+      "designRevision": "2026-10-24",
+      "provenance": "imagegen edit of existing artwork using user-supplied canonical reference"
     },
     {
       "id": "JK242",
@@ -4733,11 +4810,13 @@
       "height": 900,
       "transparent": false,
       "frames": 1,
-      "notes": "Existing promotional artwork supplied as an extra; complete scene/background is preserved. Some versions are earlier alternates.",
+      "notes": "Existing promotional artwork supplied as an extra; complete scene/background is preserved. Some versions are earlier alternates. Jellykid redesigned October 24, 2026 using the new canonical fit-ish shoulders/arms and soft-midsection reference; original pose and scene retained.",
       "source": "lane-clash/assets/menu/jellykid-lane-clash-home.png",
       "derived": false,
-      "source_sha256": "dc15b74883d41e9bf85a379f7335a741a6c5a78b4a92df6e045834294be4e1b7",
-      "sha256": "dc15b74883d41e9bf85a379f7335a741a6c5a78b4a92df6e045834294be4e1b7"
+      "source_sha256": "4afcbab0d819bede0ffabb32189ec5137d520179219bfa8a167c527d0ec26415",
+      "sha256": "4afcbab0d819bede0ffabb32189ec5137d520179219bfa8a167c527d0ec26415",
+      "designRevision": "2026-10-24",
+      "provenance": "imagegen edit of existing artwork using user-supplied canonical reference"
     },
     {
       "id": "JK243",
@@ -4809,11 +4888,13 @@
       "height": 941,
       "transparent": false,
       "frames": 1,
-      "notes": "Existing promotional artwork supplied as an extra; complete scene/background is preserved. Some versions are earlier alternates.",
+      "notes": "Existing promotional artwork supplied as an extra; complete scene/background is preserved. Some versions are earlier alternates. Jellykid redesigned October 24, 2026 using the new canonical fit-ish shoulders/arms and soft-midsection reference; original pose and scene retained.",
       "source": "patreon/coffee-break-wallpaper.png",
       "derived": false,
-      "source_sha256": "0db4bb54ca342e08bf48bb5dd4d6d1513c0629db5ed7c57c4f704472518247e9",
-      "sha256": "0db4bb54ca342e08bf48bb5dd4d6d1513c0629db5ed7c57c4f704472518247e9"
+      "source_sha256": "c68afb84f2387a68ab9d40fbd955d4d1744ce279dc74cd2ad5077909fc9b70b9",
+      "sha256": "c68afb84f2387a68ab9d40fbd955d4d1744ce279dc74cd2ad5077909fc9b70b9",
+      "designRevision": "2026-10-24",
+      "provenance": "imagegen edit of existing artwork using user-supplied canonical reference"
     },
     {
       "id": "JK247",
@@ -4828,11 +4909,13 @@
       "height": 724,
       "transparent": false,
       "frames": 1,
-      "notes": "Existing promotional artwork supplied as an extra; complete scene/background is preserved. Some versions are earlier alternates.",
+      "notes": "Existing promotional artwork supplied as an extra; complete scene/background is preserved. Some versions are earlier alternates. Jellykid redesigned October 24, 2026 using the new canonical fit-ish shoulders/arms and soft-midsection reference; original pose and scene retained.",
       "source": "patreon/jellykid-patreon-cover-crop-safe.png",
       "derived": false,
-      "source_sha256": "2a5660c0aad35b65bec78559d393b1f0ddd9a6b47d8f9ab7693b9a8c42dfb0ce",
-      "sha256": "2a5660c0aad35b65bec78559d393b1f0ddd9a6b47d8f9ab7693b9a8c42dfb0ce"
+      "source_sha256": "cfd4f3e5d58acb05a61b88e35ba90347d6b645c59dbe91d496da975b590619c8",
+      "sha256": "cfd4f3e5d58acb05a61b88e35ba90347d6b645c59dbe91d496da975b590619c8",
+      "designRevision": "2026-10-24",
+      "provenance": "imagegen edit of existing artwork using user-supplied canonical reference"
     },
     {
       "id": "JK248",
@@ -4847,11 +4930,13 @@
       "height": 724,
       "transparent": false,
       "frames": 1,
-      "notes": "Existing promotional artwork supplied as an extra; complete scene/background is preserved. Some versions are earlier alternates.",
+      "notes": "Existing promotional artwork supplied as an extra; complete scene/background is preserved. Some versions are earlier alternates. Jellykid redesigned October 24, 2026 using the new canonical fit-ish shoulders/arms and soft-midsection reference; original pose and scene retained.",
       "source": "patreon/jellykid-patreon-cover.png",
       "derived": false,
-      "source_sha256": "153757ff3ceca7e1c4ed7cc0bceb6271f217e79f2d7dc0d1b687106f3c82aa2c",
-      "sha256": "153757ff3ceca7e1c4ed7cc0bceb6271f217e79f2d7dc0d1b687106f3c82aa2c"
+      "source_sha256": "587a631a316a022301ddb5cd0f06e42192bb947c63adf8d4be8e2a64d7cbac73",
+      "sha256": "587a631a316a022301ddb5cd0f06e42192bb947c63adf8d4be8e2a64d7cbac73",
+      "designRevision": "2026-10-24",
+      "provenance": "imagegen edit of existing artwork using user-supplied canonical reference"
     },
     {
       "id": "JK249",
@@ -4999,11 +5084,13 @@
       "height": 1254,
       "transparent": true,
       "frames": 1,
-      "notes": "Current transparent gold coin prop with a Jellykid portrait.",
+      "notes": "Current transparent gold coin prop with a Jellykid portrait. Jellykid redesigned October 24, 2026 using the new canonical fit-ish shoulders/arms and soft-midsection reference; original pose and scene retained.",
       "source": "dungeon-step/assets/golden-coin.png",
       "derived": false,
-      "source_sha256": "0e99786bffb7de8ff33236060771019801d6fb83ac9b4d19ff77c4bc1a943ee2",
-      "sha256": "0e99786bffb7de8ff33236060771019801d6fb83ac9b4d19ff77c4bc1a943ee2"
+      "source_sha256": "08977588ec6cf75e02ac419c4c86239a9a79098348d7b02ed7830057000ec703",
+      "sha256": "08977588ec6cf75e02ac419c4c86239a9a79098348d7b02ed7830057000ec703",
+      "designRevision": "2026-10-24",
+      "provenance": "imagegen edit of existing artwork using user-supplied canonical reference"
     }
   ],
   "duplicate_aliases": [

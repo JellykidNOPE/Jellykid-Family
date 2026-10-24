@@ -1,9 +1,9 @@
 # Jellykid social sprite pack
 
-Compiled October 22, 2026 from the local active game collection.
+Originally compiled October 22, 2026. Jellykid character artwork updated October 24, 2026.
 Official website: https://jellykidgames.com/
 Source repository: https://github.com/JellykidNOPE/grid-game
-Source HEAD: 33e61f9e6e520599340ed54d39324471e5abf36c (compiled from the available artwork on October 22, 2026).
+Source HEAD: 33e61f9e6e520599340ed54d39324471e5abf36c (Jellykid design refreshed October 24, 2026).
 
 ## Start here
 
@@ -13,7 +13,7 @@ Contact sheets are labeled previews; they are not the transparent artwork files.
 
 256 catalog entries: 98 current artwork, 103 preserved alternates,
 15 source/runtime copies, and 40 related illustrations/promotional art.
-212 entries have actual alpha transparency; the rest retain their original background.
+211 entries have actual alpha transparency; the rest retain their original background.
 11 byte-identical filename aliases are listed separately rather than counted as additional poses.
 
 ## Folders
@@ -29,7 +29,9 @@ Contact sheets are labeled previews; they are not the transparent artwork files.
 
 ## Image notes
 
-- Original file copies are unchanged, including alpha channels and GIF animation.
+- Jellykid's artwork was revised October 24, 2026 to match the user-supplied new design.
+  The canonical portrait and design guide are in brand-reference/. Other characters,
+  creatures, props and GIF animations retain their existing artwork.
 - Dice & Dash current sprites are the exact runtime files at 384 × 384. Higher-resolution
   source exports are exact 627 × 627 atlas quadrants. Source art crosses some cell boundaries,
   so raw atlas cells may include edges of adjacent characters. The original boss source is
@@ -42,8 +44,9 @@ Contact sheets are labeled previews; they are not the transparent artwork files.
 - Dungeon Volley only has 320 × 320 monster PNGs locally. No larger source masters were found.
 - Current Dice & Dash animation is procedural in game. The supplied attack GIFs are earlier assets.
 - Summit Quest and Don't Be Late to Work remain temporarily hidden from the homepage.
-  Their available artwork is included here; the game files and website have not been modified.
-- This is a collection of existing art, with no AI recreation, background removal or invented variants.
+- The built-in imagegen tool adapted the existing Jellykid poses, cards and scenes to the
+  new reference: sturdy shoulders/arms, a soft midsection, and a less round face. The
+  mascot keeps his navy cap, headphones, brown beard and blue JELLY KID shirt.
 
 ## Provenance
 
